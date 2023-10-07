@@ -1,9 +1,14 @@
-import styles from './page.module.css'
-
-export default function Page() {
+import styles from "./landingpage.module.css";
+import img from "./icon/logo-kish-enjoy 1 (1).png";
+import img_base from "./icon/6700291cf247dfdcdf3ae66be08f520e.jpg";
+import Image from "next/image";
+import icon1 from "./icon/Expand_down.svg";
+import RootLayout from "./layout";
+import Header from "@/components/heder/Header";
+export default function Landing() {
   return (
-   <div>
-        <p>Hello Next js</p>
-   </div>
-  )
+    <RootLayout>
+      <Header/>
+    </RootLayout>
+  );
 }

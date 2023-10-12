@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "./header.module.css";
-// import img from 'icon/logo-kish-enjoy.png';
-// import img_base from "./icon/6700291cf247dfdcdf3ae66be08f520e.jpg";
 import Image from "next/image";
-
-// import icon1 from "./icon/Expand_down.svg";
-function Page() {
+function Header() {
     return (
         <div className={styles.container}>
             <div className={styles.glass_box}>
@@ -19,7 +15,7 @@ function Page() {
                 </div>
                 <div className={styles.down}>
                     <div className={styles.select1}>
-                        <div className={styles.p1}>1402/02/16</div>
+
                         <Image
                             src={"/icon/Polygon 8.svg"}
                             alt="GFG logo served with static path of public directory"
@@ -97,7 +93,6 @@ function Page() {
                                 height="24"
                                 width="24"
                             />
-
                         </div>
                     </ul>
                 </div>

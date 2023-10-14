@@ -1,4 +1,5 @@
 import "./globals.css";
+import './entertainmentlist/entertainmentl.css'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -13,10 +14,18 @@ const regular = localFont({
   src: "./font/iransansX family/IRANSansX-Regular.ttf",
   variable: "--regular",
 });
+
 const bold = localFont({
   src: "./font/iransansX family/IRANSansX-Bold.ttf",
   variable: "--bold",
 });
+
+const bolder = localFont({
+  src: "./font/iransansX family/IRANSansX-ExtraBold.ttf",
+  variable: "--bolder",
+});
+
+
 const small = localFont({
   src: "./font/Farsi numerals/IRANSansXFaNum-Light.ttf",
   variable: "--small",
@@ -36,7 +45,7 @@ export default function RootLayout({
     <html lang="fa">
       <body
       dir="rtl"
-        className={`${regular.variable} ${medium.variable} ${bold.variable} ${small.variable}`}
+        className={`${regular.variable} ${medium.variable} ${bold.variable} ${small.variable} ${small.variable} ${bolder.variable}`}
       >
         {children}
       </body>

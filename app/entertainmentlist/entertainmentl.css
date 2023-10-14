@@ -18,8 +18,10 @@ body {
     flex-direction: column;
     overflow: no-display;
 }
-.buttonk{
-    width: 100px;
+
+.buttonk {
+    gap: 5px;
+    width: 130px;
     height: 24px;
     color: var(--white, #F2F7FF);
     text-align: right;
@@ -32,12 +34,12 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-     background-color: inherit;
-    border:hidden ;
+    background-color: inherit;
+    border: hidden;
     outline: none;
 }
 
-.buttonk2{
+.buttonk2 {
 
     width: 100px;
     height: 24px;
@@ -53,11 +55,12 @@ body {
     align-items: center;
     border-radius: 8px;
     background-color: inherit;
-    border:hidden ;
+    border: hidden;
     outline: none;
 
 }
-.buttonk3{
+
+.buttonk3 {
 
     width: 130px;
     height: 24px;
@@ -73,10 +76,11 @@ body {
     align-items: center;
     border-radius: 8px;
     background-color: inherit;
-    border:hidden ;
+    border: hidden;
     outline: none;
 
 }
+
 .header {
 
     width: 100%;
@@ -269,7 +273,6 @@ body {
     width: 423px;
     color: var(--7B808C, #7B808C);
     text-align: center;
-    font-family: IRANSansXFaNum;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -333,7 +336,8 @@ body {
     padding: 25px;
 
 }
-.devresultdiv{
+
+.devresultdiv {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -342,9 +346,9 @@ body {
 }
 
 .devresult {
-      padding-right: 20px;
-      padding-left: 20px;
-     gap: 58px;
+    padding-right: 20px;
+    padding-left: 20px;
+    gap: 58px;
     display: flex;
     align-items: center;
     justify-content: center;

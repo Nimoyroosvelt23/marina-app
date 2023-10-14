@@ -14,8 +14,9 @@ import insta from '../image/insta.png'
 import ngo from '../image/ngo.png'
 import ngo2 from '../image/ngo2.png';
 import ngo3 from '../image/ngo3.png';
-import icon from  '../image/icondown.png';
+import icon from '../image/icon.png';
 import Image from "next/image";
+import Card from "./card";
 
 export default function page() {
     return (
@@ -86,22 +87,23 @@ export default function page() {
                     <p className='taknafare2'>10 مورد یافت شد</p>
                 </div>
 
-                  <div className='devresultdiv'>
-                <div className='devresult'>
-                    <div style={{display:"flow"}}>
-                       <button className='buttonk'>  مرتب سازی :  </button>
+                <div className='devresultdiv'>
+                    <div className='devresult'>
+
+
+                            <button className='buttonk'>    <Image  src={icon} width='24' height='24' alt=''/>   مرتب سازی : </button>
+
+                        <button className='buttonk2'>پر بازدید ترین</button>
+                        <button className='buttonk2'>پر فروش ترین</button>
+                        <button className='buttonk2'>ارزان ترین</button>
+                        <button className='buttonk2'>گران ترین</button>
+                        <button className='buttonk3'>پیشنهاد خریداران</button>
+                        <button className='buttonk2'>منتخب</button>
                     </div>
-                    <button className='buttonk2'>پر بازدید ترین </button>
-                    <button className='buttonk2'>پر فروش ترین</button>
-                    <button className='buttonk2'>ارزان ترین</button>
-                    <button className='buttonk2'>گران ترین</button>
-                    <button className='buttonk3'>پیشنهاد خریداران</button>
-                    <button className='buttonk2'>منتخب</button>
                 </div>
-            </div>
                 <div className="nevshte">
 
-                              
+                    <Card/>
 
                 </div>
 
@@ -174,7 +176,7 @@ export default function page() {
                     <Image alt="hhhhhh" src={insta} width='24' height='24'/>
                     <Image alt="hhhhhh" src={facebook} width='24' height='24'/>
                     <Image alt="hhhhhh" src={t} width='24' height='24'/>
-
+l
                 </div>
 
             </div>

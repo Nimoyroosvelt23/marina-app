@@ -102,11 +102,8 @@ export default function page() {
                     </div>
                 </div>
                 <div className="nevshte">
-
                     <Card/>
-
                 </div>
-
             </div>
 
             <div className='end'>

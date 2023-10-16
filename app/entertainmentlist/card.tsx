@@ -127,7 +127,7 @@ export default function Card() {
                         قیمت برای 6 دقیقه پرواز :
 
                     </p>
-
+                   
 
 
 

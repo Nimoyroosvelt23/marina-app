@@ -34,8 +34,9 @@ export default function Card() {
             return (<div key={index} className='cartkol' >
 
                 <div className='ax'>{item.ax}</div>
-                <h3 className='name'>{item.name}
-
+                <div className='divnam'>
+                    <p className='name'>{item.name} </p>
+                </div>
                     <p className='pp'>
                         قابل استفاده همزمان برای بانوان، آقایان و کودکان
                         <br/>
@@ -43,11 +44,9 @@ export default function Card() {
                         <br/>
                         قیمت برای 6 دقیقه پرواز :
                     </p>
-                </h3>
-
                 <div className='divghtmmat'>
                     <p className='ghymat'>
-                        654,000
+                        ۶۴۵,۰۰۰
                     </p>
                     <p className='toman'>تومان</p>
                 </div>

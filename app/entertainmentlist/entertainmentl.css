@@ -237,7 +237,7 @@ body {
 }
 
 .nevshte {
-    height: 1228px;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;

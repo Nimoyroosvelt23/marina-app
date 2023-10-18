@@ -1,3 +1,5 @@
+"use client"
+import React, { useState } from 'react';
 import vaking from '../image/wake-boarding 1.png';
 import paro from '../image/paddle-board-01 1.png';
 import jetski from '../image/jeski.png';
@@ -8,6 +10,8 @@ import {imageExtMimeTypeMap} from "next/dist/lib/mime-type";
 
 
 export default function Card() {
+
+
     const card = [{name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking}  width='301' height='200' alt=''/>},
         {name: 'پدل بورد', ax: <Image className='ax' src={paro} width='301' height='200' alt=''/>},
         {name: 'جت اسکی', ax: <Image className='ax' src={jetski} width='301' height='200' alt=''/>},
@@ -55,8 +59,11 @@ export default function Card() {
                         افزودن به سبد خرید
                     </p>
                 </button>
+
+
             </div>)
         })}
+
     </div>)
 
 

@@ -91,7 +91,8 @@ export default function page() {
                     <div className='devresult'>
 
 
-                            <button className='buttonk'>    <Image  src={icon} width='24' height='24' alt=''/>   مرتب سازی : </button>
+                        <button className='buttonk'><Image src={icon} width='24' height='24' alt=''/> مرتب سازی :
+                        </button>
 
                         <button className='buttonk2'>پر بازدید ترین</button>
                         <button className='buttonk2'>پر فروش ترین</button>
@@ -102,6 +103,8 @@ export default function page() {
                     </div>
                 </div>
                 <div className="nevshte">
+
+
                     <Card/>
                 </div>
             </div>
@@ -173,7 +176,6 @@ export default function page() {
                     <Image alt="hhhhhh" src={insta} width='24' height='24'/>
                     <Image alt="hhhhhh" src={facebook} width='24' height='24'/>
                     <Image alt="hhhhhh" src={t} width='24' height='24'/>
-l
                 </div>
 
             </div>

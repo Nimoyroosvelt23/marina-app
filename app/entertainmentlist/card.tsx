@@ -19,22 +19,19 @@ export default function Card() {
         {name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking} width='301' height='200' alt=''/>},
         {name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking} width='301' height='200' alt=''/>},
         {name: 'پدل بورد', ax: <Image src={paro} className='ax' width='301' height='200' alt=''/>},
-        {name: 'جت اسکی', ax: <Image src={jetski} className='ax' width='301' height='200'  alt=''/>},
-        {name: 'پاراسیل', ax: <Image src={ballon} className='ax' width='301' height='200'  alt=''/>},
-        {name: 'ویک بوردینگ', ax: <Image src={vaking}  className='ax' width='301' height='200' alt=''/>},
-        {name: 'پدل بورد', ax: <Image src={paro} className='ax' width='301' height='200'  className='ax' alt=''/>},
-        {name: 'جت اسکی', ax: <Image src={jetski} className='ax' width='301' height='200' alt=''/>},
-        {name: 'پاراسیل', ax: <Image src={ballon} className='ax' width='301' height='200' alt=''/>},
         {name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking} width='301' height='200' alt=''/>},
-        {name: 'پدل بورد', ax: <Image className='ax'  src={paro} width='301' height='200' alt=''/>},
-        {name: 'جت اسکی', ax: <Image className='ax'  src={jetski} width='301' height='200' alt=''/>},
-        {name: 'پاراسیل', ax: <Image src={ballon}className='ax' width='301' height='200' alt=''/>},
-        {name: 'ویک بوردینگ', ax: <Image src={vaking} className='ax' width='301' height='200' alt=''/>}
+        {name: 'پاراسیل', ax: <Image className='ax' src={ballon} width='301' height='200' alt=''/>},
+        {name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking} width='301' height='200' alt=''/>},
+        {name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking} width='301' height='200' alt=''/>},
+        {name: 'پدل بورد', ax: <Image src={paro} className='ax' width='301' height='200' alt=''/>},
 
 ]
     return (<div className='bodys' >
         {card.map((item, index) => {
-            return (<div  className='cartkol' >
+                       if (index < 8){
+
+                       }
+            return (<div key={index} className='cartkol' >
 
                 <div className='ax'>{item.ax}</div>
                 <h3 className='name'>{item.name}

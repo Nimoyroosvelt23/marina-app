@@ -11,12 +11,13 @@ body {
 
     overflow: no-display;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     overflow: no-display;
+
 }
 
 .buttonk {
@@ -38,6 +39,8 @@ body {
     border: hidden;
     outline: none;
 }
+
+
 
 .buttonk2 {
 
@@ -180,8 +183,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aqua; */
-}
+ }
 
 .h1 {
     z-index: 2;
@@ -204,7 +206,7 @@ body {
 }
 
 .nonheader {
-    height: 1100px;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -232,32 +234,105 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-
     width: 100%;
 }
 
 .nevshte {
-    height: fit-content;
+    margin-bottom: 200px;
+    overflow: visible;
+     height: max-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
+
 
 }
 
+.pagenation {
+    width: 210px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: row;
+    margin-top: 56px;
+}
 
+.safeghabl {
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--small);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: hidden;
+    outline: none;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+.safeghabl2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 21px;
+    width: 62px;
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--small);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: hidden;
+    outline: none;
+    background-color: inherit;
+
+}
+.safeghabl:active{
+    color: #000;
+    text-align: right;
+    font-family: var(--medium);
+      width: 20px ;
+    height: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: rgba(221, 152, 0, 0.20);
+
+
+}
+.safeghabl2:active{
+    color: #000;
+    text-align: right;
+    font-family: var(--medium);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: rgba(221, 152, 0, 0.20);
+
+
+}
 .end {
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     width: 90%;
     height: 332px;
-
     background: rgba(255, 255, 255, 0.80);
-
-
     padding: 24px;
     gap: 1em;
     border-right: none;
@@ -282,20 +357,16 @@ body {
 }
 
 .taknafare {
-
     font-family: var(--bolder);
     font-size: 24px;
     direction: rtl;
     color: var(--black, #393939);
     text-align: right;
-
-
     font-style: normal;
     font-weight: bolder;
     line-height: normal;
     width: 164px;
     height: 40px;
-
 }
 
 .taknafare2 {
@@ -308,7 +379,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
     font-family: var(--small);
 }
 
@@ -323,7 +393,6 @@ body {
 .akharin {
     height: 78px;
     width: 100%;
-
 }
 
 .darakhar {
@@ -335,7 +404,6 @@ body {
     flex-direction: row;
     height: 60px;
     padding: 25px;
-
 }
 
 .devresultdiv {
@@ -358,7 +426,6 @@ body {
     width: 90%;
     height: 40px;
     background: var(--primary, #EBA453);
-
     box-shadow: 0px 16px 32px 0px rgba(43, 53, 116, 0.04);
 }
 
@@ -371,11 +438,9 @@ body {
     justify-content: space-around;
     flex-direction: row;
     gap: 14px;
-
 }
 
 .divtah {
-
     gap: 15px;
     width: 30%;
     padding: 64px;
@@ -399,12 +464,12 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: var(--mediums);
+    font-family: var(--medium);
 
 }
 
 .kie2 {
-    font-family: var(--mediums);
+    font-family: var(--medium);
     border-left-color: #7B808C;
     direction: rtl;
     height: 24px;
@@ -427,6 +492,7 @@ body {
     height: 25%;
     width: 129px;
     border-left: 1px solid #EDEDED;
+
 }
 
 span {

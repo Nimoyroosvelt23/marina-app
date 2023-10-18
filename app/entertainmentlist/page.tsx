@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, {useState} from "react";
 import './entertainmentl.css';
 import line from '../image/Line 18.png'
 import keshti from '../image/kish.png'
@@ -17,8 +18,10 @@ import ngo3 from '../image/ngo3.png';
 import icon from '../image/icon.png';
 import Image from "next/image";
 import Card from "./card";
+import vaking from "../image/wake-boarding 1.png";
 
 export default function page() {
+
     return (
         <div className="divkol">
 
@@ -93,7 +96,6 @@ export default function page() {
 
                         <button className='buttonk'><Image src={icon} width='24' height='24' alt=''/> مرتب سازی :
                         </button>
-
                         <button className='buttonk2'>پر بازدید ترین</button>
                         <button className='buttonk2'>پر فروش ترین</button>
                         <button className='buttonk2'>ارزان ترین</button>
@@ -103,14 +105,30 @@ export default function page() {
                     </div>
                 </div>
                 <div className="nevshte">
-
-
                     <Card/>
+                    <div className='pagenation'>
+
+                        <p className='safeghabl2'>
+                            صفحه بعد
+                        </p>
+                        <button className='safeghabl'>
+                            ۳
+                        </button>
+                        <button className='safeghabl'>
+                            ۲
+                        </button>
+                        <button className='safeghabl'>
+                            ۱
+                        </button>
+                        <p className='safeghabl2'>
+                            صفحه قبل
+                        </p>
+                    </div>
                 </div>
             </div>
-
             <div className='end'>
                 <Image alt="" src={keshti} height='91' width='176'/>
+
                 <p className='pain'>
                     مارینا کیش تخصصی ترین و متنوع ترین ارائه دهنده کالا و تجهیزات دریایی در کشور عزیزمان می باشد. از این
                     رو به عنوان نماینده انحصاری کمپانی های معتبری همچون، ژانو، ردپدل، ویبیت، هوبی کت و بسیاری از تجهیزات
@@ -127,8 +145,6 @@ export default function page() {
                 </div>
             </div>
             <div className='darakhar'>
-
-
                 <div className='divtah'>
                     <div></div>
                     <div className='divd'>

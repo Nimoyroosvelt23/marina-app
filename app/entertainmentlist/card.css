@@ -1,7 +1,9 @@
 .bodys{
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
+   overflow: visible;
     gap: 30px;
 }
 
@@ -22,7 +24,6 @@
 }
 
 .name {
-
     font-family: var(--bold);
     color: var(--black, #393939);
     text-align: right;
@@ -109,4 +110,5 @@
     height: 200px;
     flex-shrink: 0;
     border-radius: 10px;
+
 }

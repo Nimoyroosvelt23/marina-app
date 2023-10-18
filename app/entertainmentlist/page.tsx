@@ -143,6 +143,7 @@ export default function page() {
                     <Image alt="" src={ax5} width='90' height='42'/>
                     <Image alt="" src={ax6} width='90' height='42'/>
                 </div>
+
             </div>
             <div className='darakhar'>
                 <div className='divtah'>

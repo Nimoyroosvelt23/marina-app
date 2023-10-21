@@ -20,68 +20,6 @@ body {
 
 }
 
-.buttonk {
-    gap: 5px;
-    width: 130px;
-    height: 24px;
-    color: var(--white, #F2F7FF);
-    text-align: right;
-    font-family: var(--bold);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background-color: inherit;
-    border: hidden;
-    outline: none;
-}
-
-
-.buttonk2 {
-
-    width: 100px;
-    height: 24px;
-    color: var(--white, #F2F7FF);
-    text-align: right;
-    font-family: var(--small);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background-color: inherit;
-    border: hidden;
-    outline: none;
-
-}
-
-.buttonk3 {
-
-    width: 130px;
-    height: 24px;
-    color: var(--white, #F2F7FF);
-    text-align: right;
-    font-family: var(--small);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background-color: inherit;
-    border: hidden;
-    outline: none;
-
-}
 
 .header {
 
@@ -224,36 +162,172 @@ body {
     width: 100%;
 }
 
-.bala2 {
-    margin-top: -90px;
-    padding-top: 24px;
-    padding-left: 64px;
-    padding-right: 64px;
+.iconsamtrast {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 48px;
+    column-gap: 16px;
 
 }
 
+.vasaticon {
+    height: 100%;
+    width: 65%;
+}
+
+.icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 8px;
+}
+
 .nevshte {
-    margin-bottom: 200px;
+
+    padding-left: 150px;
+    height: 3000px;
     overflow: visible;
-    height: max-content;
     width: 100%;
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: #ffffff;
+    gap: 10px;
+}
+
+.pmahsol {
+    direction: rtl;
+    width: 550px;
+    height: 229px;
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--small);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.divpmahsol {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.axayrast {
+
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    height: 420px;
+}
+
+.axballon {
+    border-radius: 12px;
+    border: hidden;
+    outline: none;
+    height: 180px;
+    width: 568px;
+}
+
+.recht {
+    padding-right: 150px;
+    height: 100%;
+    width: 50%;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 
 }
 
+.divdarajeb {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 32px;
+}
 
+.darajeb {
+    direction: rtl;
+    width: 117px;
+    height: 30px;
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--bold);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
+.divghavanin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+}
+
+.ghavanin {
+    height: 30px;
+    width: 198px;
+    direction: rtl;
+    font-family: var(--bold);
+    color: var(--black, #393939);
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.divnevghavanin{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 620px
+
+}
+.nevghavanin {
+
+    width: 550px;
+    height: 610px;
+    flex-shrink: 0;
+    color: var(--black, #393939);
+    text-align: right;
+
+    /* body/MD */
+    font-family: var(--small);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.links {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #4B4B4B;
+}
 
 .end {
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -267,8 +341,8 @@ body {
     border-left: none;
     border-bottom: 1px solid #EDEDED;
     border-top: 1px solid #EDEDED;
-
 }
+
 
 .pain {
     font-family: var(--small);
@@ -286,15 +360,17 @@ body {
 
 .taknafare {
     font-family: var(--bolder);
-    font-size: 24px;
-    direction: rtl;
+
+
     color: var(--black, #393939);
     text-align: right;
+    font-size: 25px;
     font-style: normal;
     font-weight: bolder;
     line-height: normal;
-    width: 164px;
-    height: 40px;
+    width: 77px;
+    height: 36px;
+    direction: rtl;
 }
 
 .taknafare2 {
@@ -335,28 +411,6 @@ body {
 
 }
 
-.devresultdiv {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-}
-
-.devresult {
-    padding-right: 20px;
-    padding-left: 20px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 56px;
-    width: 90%;
-    height: 40px;
-    background: var(--primary, #EBA453);
-    box-shadow: 0px 16px 32px 0px rgba(43, 53, 116, 0.04);
-}
 
 .rast {
     width: 30%;
@@ -386,9 +440,9 @@ body {
     direction: rtl;
     height: 24px;
     width: 100px;
-     color: var(--7B808C, #7B808C);
+    color: var(--7B808C, #7B808C);
     text-align: center;
-    font-family: var(--small) ;
+    font-family: var(--small);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

@@ -20,6 +20,7 @@ import ngo from '../image/ngo.png'
 import ngo2 from '../image/ngo2.png';
 import ngo3 from '../image/ngo3.png';
 import icon from '../image/icon.png';
+import balllonab from '../image/ballonro.png';
 import Image from "next/image";
 import './panel.css'
 import {Calendar, CalendarProvider} from "zaman";

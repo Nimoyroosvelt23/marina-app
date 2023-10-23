@@ -199,9 +199,9 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
-                            <CalendarProvider locale="fa" round="x2">
+                            <CalendarProvider className='clender'  direction={"rtl"} accentColor="#F5F5F5" locale="fa" round="x4">
                                 <Calendar
-                                        
+
                                     defaultValue={new Date()}
                                     onChange={(from, to) =>
                                         console.log("from >>", from, "\n", "to >>", to)

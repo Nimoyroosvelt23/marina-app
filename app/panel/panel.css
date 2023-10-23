@@ -19,7 +19,10 @@ body {
     overflow: no-display;
 
 }
-
+.zmn-nav-button {
+    /* Add your custom styles here */
+      display:flex;
+}
 
 .header {
 
@@ -198,7 +201,11 @@ body {
     background-color: #ffffff;
 
 }
-
+.clender{
+      max-width: 500px;
+    max-height: 200px;
+    background-color: #9600F0;
+}
 .pmahsol {
     direction: rtl;
     width: 550px;
@@ -566,3 +573,28 @@ span {
     width: 40%;
     height: 100%;
 }
+
+
+
+/* Style the outer container */
+
+  
+  /* Style the calendar itself */
+  .zmn-calendar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the weekends differently */
+  .zmn-calendar .day.weekend {
+    background-color: #ffd8d8;
+  }
+  
+  /* Style the selected date */
+  .zmn-calendar .day.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

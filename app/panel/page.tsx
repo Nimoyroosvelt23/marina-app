@@ -4,7 +4,6 @@ import ballonab from '../image/p2.png';
 import star from '../image/setar.png';
 import save from '../image/save.png';
 import like from '../image/hurt.png'
-import React, {useState} from "react";
 import line from '../image/Line 18.png'
 import keshti from '../image/kish.png'
 import ax1 from '../image/1.png';
@@ -19,14 +18,18 @@ import insta from '../image/insta.png'
 import ngo from '../image/ngo.png'
 import ngo2 from '../image/ngo2.png';
 import ngo3 from '../image/ngo3.png';
-import icon from '../image/icon.png';
+import zarb from '../image/zz.png';
+import mosbat from '../image/mosbat.png';
+import Link from 'next/link';
+import {useState} from 'react';
 import balllonab from '../image/ballonro.png';
 import Image from "next/image";
+import lin2 from '../image/line2.png';
 import './panel.css'
 import {Calendar, CalendarProvider} from "zaman";
 
 export default function page() {
-
+    const [number, setnumer] = useState<number>(0)
     return (
         <div className="divkol">
 
@@ -199,20 +202,41 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
-                            <CalendarProvider className='clender'  direction={"rtl"} accentColor="#F5F5F5" locale="fa" round="x4">
-                                <Calendar
-
-                                    defaultValue={new Date()}
-                                    onChange={(from, to) =>
-                                        console.log("from >>", from, "\n", "to >>", to)
-                                    }
-                                    weekends={[6]}
-                                />
-                            </CalendarProvider>
+                            
                         </div>
+                        <div className='moshahede'>
+                            <Image onClick={(event) =>
+                                setnumer(number + 1)
+                            } width='32' height='32' src={mosbat} alt=''/>
+                            <p className='pnumber'>{number}</p>
+                            <Image onClick={(event) => {
 
+                                if (number < 0) {
+                                    setnumer(number * 0)
+                                } else if (number > 0) {
+                                    setnumer(number - 1)
+                                }
+                            }} width='32' height='32' src={zarb} alt=''/>
+                            <Link href='/' className='moshahedesabad'>مشاهده سبد خرید</Link>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+            <div className='nazaratkarbardiv'>
+                      <div className='nazarkarbarheader'>
+                          <Image src={line} width='216' alt=''/>
+                              <p className='nevnazarkarbar'>
+                                  نظرات کاربران
+                              </p>
+                          <Image src={lin2} width='216' alt=''/>
+                      </div>
+                <div className='divdidgah55'>
+                    <p className='didgah55'>
+                        55 دیدگاه برای پاراسیل کلوپ دریایی 5 ستاره مارینا کیش ثبت شده است.
+                    </p>
+                </div>
+
             </div>
             <div className='end'>
                 <Image alt="" src={keshti} height='91' width='176'/>
@@ -234,7 +258,8 @@ export default function page() {
             </div>
             <div className='darakhar'>
                 <div className='divtah'>
-                    <div></div>
+                    <div>                    <Image src={line} width='128' alt=''/>
+                    </div>
                     <div className='divd'>
                         <h4 className='kie'>
                             تفریحات دریایی

@@ -236,7 +236,10 @@ export default function page() {
                         55 دیدگاه برای پاراسیل کلوپ دریایی 5 ستاره مارینا کیش ثبت شده است.
                     </p>
                 </div>
+                <div className='coment'>
 
+                </div>
+                       
             </div>
             <div className='end'>
                 <Image alt="" src={keshti} height='91' width='176'/>

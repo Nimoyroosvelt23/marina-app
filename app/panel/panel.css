@@ -660,6 +660,17 @@ span {
     line-height: normal;
     direction: rtl;
 }
+.coment{
+    gap: 14px;
+    background-color: #669900;
+         overflow: hidden;
+     display: flex;
+    align-items: flex-start ;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 331px;
+}
 .divdidgah55{
     display: flex;
     justify-content:center ;

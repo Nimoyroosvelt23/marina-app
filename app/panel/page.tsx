@@ -29,7 +29,70 @@ import './panel.css'
 import {Calendar, CalendarProvider} from "zaman";
 
 export default function page() {
+
+    const [cardcom, setcordcom] = useState([{
+        name: 'محمد',
+        lastname: 'علوی',
+        matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
+    },
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+
+
+        {
+            name: 'محمد',
+            lastname: 'علوی',
+            matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
+        },
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+        {
+            name: 'محمد',
+            lastname: 'علوی',
+            matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
+        },
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+
+
+
+
+
+
+    ]);
+    const [name, setname] = useState("");
+    const [lastname, setlastnamer] = useState('');
+    const [matn, setmatn] = useState('');
+    const [email, setemail] = useState('')
     const [number, setnumer] = useState<number>(0)
+    const [bull, setbull] = useState<boolean>(false)
     return (
         <div className="divkol">
 
@@ -202,7 +265,7 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
-                            
+
                         </div>
                         <div className='moshahede'>
                             <Image onClick={(event) =>
@@ -224,23 +287,94 @@ export default function page() {
 
             </div>
             <div className='nazaratkarbardiv'>
-                      <div className='nazarkarbarheader'>
-                          <Image src={line} width='216' alt=''/>
-                              <p className='nevnazarkarbar'>
-                                  نظرات کاربران
-                              </p>
-                          <Image src={lin2} width='216' alt=''/>
-                      </div>
+                <div className='nazarkarbarheader'>
+                    <Image src={line} width='216' alt=''/>
+                    <p className='nevnazarkarbar'>
+                        نظرات کاربران
+                    </p>
+                    <Image src={lin2} width='216' alt=''/>
+                </div>
                 <div className='divdidgah55'>
                     <p className='didgah55'>
                         55 دیدگاه برای پاراسیل کلوپ دریایی 5 ستاره مارینا کیش ثبت شده است.
                     </p>
                 </div>
-                <div className='coment'>
+                <div className='coment' style={{
+                    overflow: bull === true ? "visible" : 'hidden',
+                    height: bull === false ?  '445px': 'fit-content',
+                }}>
+                    {cardcom.map((item, index) => {
+
+                        return (<div key={index} className='vidcoment'>
+
+
+                            <div className='khataval'>
+                                <p className='namecom'>
+                                    {item.name} - 10 اردیبهشت 1402
+                                </p>
+                                <div className='star'>
+                                    <Image src={star} width='16' height='16' alt=''/>
+                                    <Image src={star} width='16' height='16' alt=''/>
+                                    <Image src={star} width='16' height='16' alt=''/>
+                                    <Image src={star} width='16' height='16' alt=''/>
+                                    <Image src={star} width='16' height='16' alt=''/>
+                                </div>
+
+                            </div>
+                            <p className='matn'>{item.matn}</p>
+
+                        </div>)
+                    })}
+
 
                 </div>
-                       
+                <div className='divbutton'>
+                    <button onClick={(e) => {
+                        if (bull === true) {
+                            setbull(false)
+                        } else if (bull === false) {
+                            setbull(true)
+                        }
+                        console.log(bull)
+                    }} className='but'>
+
+                        <p className='pbut'>
+
+                            {bull === true ? ' نمایش کمتر' : ' نمایش بیشتر'}
+
+                        </p>
+
+                    </button>
+                </div>
+                <div className='nazarkarbarheader' style={{display: bull === true ? 'none' : 'flex'}} >
+                    <Image src={line} width='216' alt=''/>
+                    <p className='nevnazarkarbar2'>
+                        نظر خود را با ما در میان بگذارید.
+                    </p>
+                    <Image src={lin2} width='216' alt=''/>
+                </div>
+
+                <div className='inputscom' style={{display: bull === true ? 'none' : 'flex'}}>
+                    <div className='div2input'>
+                        <input placeholder='نام' className='k2input'/> <input placeholder='نام خانوادگی'
+                                                                              className='k2input'/>
+                    </div>
+                    <input placeholder='ایمیل' className='inputemail'/>
+
+                    <input placeholder='متن پیام...' className='matnpayam'/>
+
+                    <div className='ersalpayam'>
+
+                        <button className='buttomtala'><p className='pnazar'>ثبت نظر</p></button>
+                    </div>
+                    <div style={{width:'100%' ,height:'20px'}}>
+
+                    </div>
+                </div>
+
+
             </div>
+
             <div className='end'>
                 <Image alt="" src={keshti} height='91' width='176'/>
                 <p className='pain'>
@@ -261,7 +395,7 @@ export default function page() {
             </div>
             <div className='darakhar'>
                 <div className='divtah'>
-                    <div>                    <Image src={line} width='128' alt=''/>
+                    <div><Image src={line} width='128' alt=''/>
                     </div>
                     <div className='divd'>
                         <h4 className='kie'>

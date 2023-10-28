@@ -618,7 +618,7 @@ span {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    height: 1000px;
+    height: fit-content;
     width: 100%;
     background-color: #ffffff;
     padding-left: 394px;
@@ -648,8 +648,21 @@ span {
     line-height: normal;
 }
 
+.nevnazarkarbar2 {
+    color: var(--black, #393939);
+    text-align: right;
+    width: fit-content;
+    height: 36px;
+    /* H4 */
+    font-family: var(--bolder);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
 .didgah55 {
-      height: 24px;
+    height: 24px;
     font-family: var(--medium);
     width: 488px;
     color: var(--black, #393939);
@@ -660,23 +673,236 @@ span {
     line-height: normal;
     direction: rtl;
 }
-.coment{
-    gap: 14px;
-    background-color: #669900;
-         overflow: hidden;
-     display: flex;
-    align-items: flex-start ;
-    justify-content: flex-start;
-    flex-direction: column;
-    max-width: 100%;
-    max-height: 331px;
-}
-.divdidgah55{
+
+.divdidgah55 {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80%;
+
+}
+
+.khataval {
+    gap: 8px;
+    width: 100%;
+    height: 18px;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+.coment {
+    width: 100%;
+
+    margin-top: 24px;
+     margin-bottom: 24px;
+    padding-right: 330px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 16px;
+}
+
+.vidcoment {
+
+    align-items: flex-start;
+    width: 100%;
+    height: 55px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+}
+
+.matn {
+
+    width: fit-content;
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--medium);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.14px;
+}
+
+.namecom {
+    direction: rtl;
+    width: fit-content;
+    flex-shrink: 0;
+    color: var(--neutral-04, #787878);
+    text-align: right;
+    font-family: var(--small);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.star {
+    display: flow;
+}
+
+.divbutton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.but {
+    height: 40px;
+    width: 119px;
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--primary, #DD9800);
+    background-color: initial;
+    margin-bottom: 40px;
+}
+
+.pbut {
+    color: var(--taritary-primary-03, #DD9800);
+    height: 24px;
+    width: 87px;
+    direction: rtl;
+    font-family: var(--small);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inputscom {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 
-        height: 30px;
-      width: 80%;
+    gap: 24px;
+}
 
+.div2input {
+    gap: 23.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 555px;
+}
+
+.k2input {
+
+    text-align: right;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* body/MD */
+    font-family: var(--small);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: initial;
+    direction: rtl;
+
+    border-radius: 8px;
+    border: 1px solid var(--neutral-04, #787878);
+    opacity: 0.92;
+    width: 265.5px;
+    height: 48px;
+    flex-shrink: 0;
+    box-shadow: 0px 8px 16px 0px rgba(43, 53, 116, 0.04);
+}
+
+.inputemail {
+    text-align: right;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* body/MD */
+    font-family: var(--small);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: initial;
+    direction: rtl;
+    width: 582px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-04, #787878);
+    opacity: 0.92;
+    /* medium */
+
+    box-shadow: 0px 8px 16px 0px rgba(43, 53, 116, 0.04);
+}
+
+.matnpayam {
+    text-align: right;
+    padding-right: 24px;
+    padding-top: 25px;
+    padding-bottom: 104px;
+    font-family: var(--small);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: initial;
+    direction: rtl;
+    width: 582px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-04, #787878);
+    opacity: 0.92;
+    box-shadow: 0px 8px 16px 0px rgba(43, 53, 116, 0.04);
+}
+
+.ersalpayam {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 43%;
+    height: 100px;
+}
+
+.buttomtala {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--primary, #DD9800);
+    width: 90px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.pnazar {
+    color: var(--white, #F2F7FF);
+    font-family: var(--medium);
+    width: 54px;
+    height: 24px;
+    /* caption/lg */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

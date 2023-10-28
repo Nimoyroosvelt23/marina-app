@@ -1,10 +1,55 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    direction: rtl;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
 }
+.swiper-button-next::after{
+  color :white;
+  font-size: 24px !important;
+font-weight: 900;
+margin-right: 5px;
+}
+.swiper-button-next{
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius:100%;
+  top: 650px !important;
+  left: 64px !important;
+}
+.swiper-button-prev::after{
+  color: white;
+  font-size: 24px !important;
+  font-weight: 900;
+  margin-left: 5px;
+}
+.swiper-button-prev{
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius:100%;
+  /* margin-top: 550px; */
+  top: 650px !important;
+  right: 64px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: unset;
+  margin: unset;
+}
+

@@ -25,10 +25,12 @@ import {useState} from 'react';
 import balllonab from '../image/ballonro.png';
 import Image from "next/image";
 import lin2 from '../image/line2.png';
+import flash from '../image/flash.png'
 import './panel.css'
 import {Calendar, CalendarProvider} from "zaman";
 
 export default function page() {
+
 
     const [cardcom, setcordcom] = useState([{
         name: 'محمد',
@@ -82,17 +84,75 @@ export default function page() {
         {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
 
 
-
-
-
-
     ]);
+
+    interface cardcoment {
+        name: string,
+        lastname: string,
+        matn: string,
+        email: string,
+    }
+
+
     const [name, setname] = useState("");
     const [lastname, setlastnamer] = useState('');
     const [matn, setmatn] = useState('');
-    const [email, setemail] = useState('')
+    const [email, setemail] = useState<string>('')
     const [number, setnumer] = useState<number>(0)
     const [bull, setbull] = useState<boolean>(false)
+    const [inputcolor, setinputcolor] = useState<boolean>(false)
+    const [inputcolor2, setinputcolor2] = useState<boolean>(false)
+    const emmmail = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        const emailAddress = e.target.value;
+
+        console.log(emailAddress); // Add this line to check the input
+
+        if (regex.test(emailAddress)) {
+            setemail(emailAddress);
+        }
+    }
+
+    const nameeee = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+        const regex = /^[\p{L}\s]*$/u;
+        const inputName = e.target.value
+
+        if (regex.test(inputName)) {
+
+            setname(e.target.value)
+        }
+
+
+    }
+
+
+    const matnee = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const regex = /^[\p{L}\s]*$/u;
+        const inputName = e.target.value
+        if (regex.test(inputName)) {
+            setmatn(e.target.value)
+        }
+
+
+    }
+
+
+    const lastnameeee = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+        const regex = /^[\p{L}\s]*$/u;
+        const inputName = e.target.value
+
+        if (regex.test(inputName)) {
+
+            setlastnamer(e.target.value)
+        }
+
+
+    }
+
+
     return (
         <div className="divkol">
 
@@ -265,7 +325,74 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
+                              <div className='calnder'>
+                        </div>
+                            <div className='baghicalnnder'>
 
+                                <p className='zamanbandi'>
+                                    زمان بندی
+                                </p>
+
+                                <p className='zamanbandibadi'>
+                                    از ساعت 9 الی 17 در ساحل درج شده در بلیط رزرو
+                                </p>
+                            </div>
+
+                            <div className='diventekhab'>
+
+                                <div className='diventekhab1'>
+
+                                    <div className='divv1'>
+
+                                        <div className='ej'>
+                                            <div onClick={(e) => {
+
+                                                setinputcolor(inputcolor === false ? true : false)
+
+                                                console.log(inputcolor)
+                                            }}
+
+                                                 style={{backgroundColor: inputcolor === true ? '#07D95A' : '#E0E0E0'}}
+
+                                                 className='inpubox'></div>
+
+                                            <p className='ejare'>
+                                                اجاره ساعتی :
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p className='gheymat'>
+                                        6 دقیقه برای هر نفر : 654,000 تومان
+                                    </p>
+                                </div>
+                                <div className='diventekhab2'>
+
+                                    <div className='ej'>
+                                        <div onClick={(e) => {
+
+                                            setinputcolor2(inputcolor2 === false ? true : false)
+
+                                            console.log(inputcolor2)
+                                        }}
+
+                                             style={{backgroundColor: inputcolor2 === false ? '#07D95A' : '#E0E0E0'}}
+
+                                             className='inpubox'></div>
+
+                                        <p className='ejare'>
+                                            اجاره روزانه :
+                                        </p>
+                                    </div>
+                                    <p className='gheymat'>
+                                        24 ساعت برای هر نفر : 7,000,000 تومان
+
+                                    </p>
+                                </div>
+
+                            </div>
+
+                              <button className='buttonabi'> <Image className='axax' src={flash} width='18' height='13' alt=''/><p className='rezerv'>رزرو</p> </button>
                         </div>
                         <div className='moshahede'>
                             <Image onClick={(event) =>
@@ -288,11 +415,11 @@ export default function page() {
             </div>
             <div className='nazaratkarbardiv'>
                 <div className='nazarkarbarheader'>
-                    <Image src={line} width='216' alt=''/>
+                    <Image src={line} width='280' alt=''/>
                     <p className='nevnazarkarbar'>
                         نظرات کاربران
                     </p>
-                    <Image src={lin2} width='216' alt=''/>
+                    <Image src={lin2} width='280' alt=''/>
                 </div>
                 <div className='divdidgah55'>
                     <p className='didgah55'>
@@ -301,7 +428,7 @@ export default function page() {
                 </div>
                 <div className='coment' style={{
                     overflow: bull === true ? "visible" : 'hidden',
-                    height: bull === false ?  '445px': 'fit-content',
+                    height: bull === false ? '445px' : 'fit-content',
                 }}>
                     {cardcom.map((item, index) => {
 
@@ -346,28 +473,53 @@ export default function page() {
 
                     </button>
                 </div>
-                <div className='nazarkarbarheader' style={{display: bull === true ? 'none' : 'flex'}} >
-                    <Image src={line} width='216' alt=''/>
+                <div className='nazarkarbarheader' style={{display: bull === true ? 'none' : 'flex'}}>
+                    <Image src={line} width='280' alt=''/>
                     <p className='nevnazarkarbar2'>
                         نظر خود را با ما در میان بگذارید.
                     </p>
-                    <Image src={lin2} width='216' alt=''/>
+                    <Image src={lin2} width='280' alt=''/>
                 </div>
 
                 <div className='inputscom' style={{display: bull === true ? 'none' : 'flex'}}>
                     <div className='div2input'>
-                        <input placeholder='نام' className='k2input'/> <input placeholder='نام خانوادگی'
-                                                                              className='k2input'/>
+                        <input value={name} type="text" onChange={(e) => nameeee(e)} placeholder='نام'
+                               className='k2input'/><input onChange={(e) => lastnameeee(e)} value={lastname}
+                                                           placeholder='نام خانوادگی'
+                                                           className='k2input'/>
                     </div>
-                    <input placeholder='ایمیل' className='inputemail'/>
+                    <input value={email} type="email" onChange={(e) => setemail(e.target.value)} placeholder='ایمیل'
+                           className='inputemail'/>
 
-                    <input placeholder='متن پیام...' className='matnpayam'/>
+                    <input value={matn} onChange={(e) => matnee(e)} type='text' placeholder='متن پیام...'
+                           className='matnpayam'/>
 
                     <div className='ersalpayam'>
 
-                        <button className='buttomtala'><p className='pnazar'>ثبت نظر</p></button>
+                        <button onClick={() => {
+                            if (name !== "" && lastname !== '' && email !== '' && matn !== '') {
+
+                                const cardcomt: cardcoment = {
+                                    name: name,
+                                    lastname: lastname,
+                                    email: email,
+                                    matn: matn,
+                                }
+
+                                const temp = [...cardcom]
+                                temp.push(cardcomt)
+                                setcordcom(temp)
+
+                                setemail('')
+                                setname('')
+                                setmatn('')
+                                setlastnamer('')
+
+
+                            }
+                        }} className='buttomtala'><p className='pnazar'>ثبت نظر</p></button>
                     </div>
-                    <div style={{width:'100%' ,height:'20px'}}>
+                    <div style={{width: '100%', height: '20px'}}>
 
                     </div>
                 </div>

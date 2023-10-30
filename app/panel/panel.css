@@ -563,7 +563,7 @@ body {
 
 .buttonabi{
     margin-top: 32px;
-  
+
     display: flex;
     width: 484px;
     padding: 8px 16px;
@@ -869,6 +869,13 @@ span {
     flex-direction: column;
     height: 400px;
     gap: 16px;
+}
+
+.mosbat:active{
+   width: 32px;
+    height: 32px;
+    border-radius: 50%;
+   color: gold;
 }
 
 .vidcoment {

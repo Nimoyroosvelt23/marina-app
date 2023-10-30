@@ -19,15 +19,20 @@ import ngo from '../image/ngo.png'
 import ngo2 from '../image/ngo2.png';
 import ngo3 from '../image/ngo3.png';
 import zarb from '../image/zz.png';
+import zarbx from '../image/zzzz.svg'
 import mosbat from '../image/mosbat.png';
 import Link from 'next/link';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import balllonab from '../image/ballonro.png';
 import Image from "next/image";
 import lin2 from '../image/line2.png';
-import flash from '../image/flash.png'
+import flash from '../image/flash.png';
+
+import gold from '../image/mosbatgold.png';
+import ghermez from '../image/zarbghemz.png';
 import './panel.css'
 import {Calendar, CalendarProvider} from "zaman";
+import {url} from "inspector";
 
 export default function page() {
 
@@ -102,6 +107,11 @@ export default function page() {
     const [bull, setbull] = useState<boolean>(false)
     const [inputcolor, setinputcolor] = useState<boolean>(false)
     const [inputcolor2, setinputcolor2] = useState<boolean>(false)
+
+    const [mosb, setmosb] = useState<boolean>(false)
+    const [mosb2, setmosb2] = useState(false)
+
+
     const emmmail = (e: React.ChangeEvent<HTMLInputElement>) => {
         const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -123,10 +133,6 @@ export default function page() {
 
             setname(e.target.value)
         }
-
-
-    }
-
 
     const matnee = (e: React.ChangeEvent<HTMLInputElement>) => {
         const regex = /^[\p{L}\s]*$/u;
@@ -325,8 +331,8 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
-                              <div className='calnder'>
-                        </div>
+                            <div className='calnder'>
+                            </div>
                             <div className='baghicalnnder'>
 
                                 <p className='zamanbandi'>
@@ -392,21 +398,41 @@ export default function page() {
 
                             </div>
 
-                              <button className='buttonabi'> <Image className='axax' src={flash} width='18' height='13' alt=''/><p className='rezerv'>رزرو</p> </button>
+                            <button className='buttonabi'><Image className='axax' src={flash} width='18' height='13'
+                                                                 alt=''/><p className='rezerv'>رزرو</p></button>
                         </div>
                         <div className='moshahede'>
-                            <Image onClick={(event) =>
-                                setnumer(number + 1)
-                            } width='32' height='32' src={mosbat} alt=''/>
+                            <Image onClick={(event) => {
+
+                                setmosb(true)
+                                {
+                                    setnumer(number + 1)
+                                    setmosb2(false)
+                                }
+
+                                setmosb(mosb === false)
+                            }
+
+                            } width='32' height='32' style={{backgroundImage: 'black'}} src={zarbx} className='mosbat'
+                                   alt=''/>
                             <p className='pnumber'>{number}</p>
                             <Image onClick={(event) => {
 
+
                                 if (number < 0) {
                                     setnumer(number * 0)
+
+
                                 } else if (number > 0) {
                                     setnumer(number - 1)
+                                    setmosb2(true)
                                 }
-                            }} width='32' height='32' src={zarb} alt=''/>
+
+                                setmosb2(mosb2 === false)
+                                setmosb(false)
+
+
+                            }} width='32' height='32' src={mosb2 === true ? ghermez : zarb} alt=''/>
                             <Link href='/' className='moshahedesabad'>مشاهده سبد خرید</Link>
                         </div>
                     </div>

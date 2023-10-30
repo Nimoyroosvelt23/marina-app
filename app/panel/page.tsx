@@ -107,9 +107,49 @@ export default function page() {
     const [bull, setbull] = useState<boolean>(false)
     const [inputcolor, setinputcolor] = useState<boolean>(false)
     const [inputcolor2, setinputcolor2] = useState<boolean>(false)
-
+    const [logo, setlogo] = useState('')
+    const [logo2, setlogo2] = useState('')
     const [mosb, setmosb] = useState<boolean>(false)
     const [mosb2, setmosb2] = useState(false)
+
+    useEffect(() => {
+
+
+        if (mosb === true) {
+            setlogo(gold)
+            setmosb(true)
+        } else if (mosb === false) {
+            setlogo(mosbat)
+
+        }
+
+
+
+        setmosb(false)
+
+
+    },)
+    useEffect(() => {
+        {
+
+            if (mosb2 === false) {
+                setlogo2(zarb)
+                setmosb2(false)
+
+            }else
+            if (mosb2 === true) {
+                setlogo2(ghermez)
+                setmosb2(true)
+            }
+
+
+
+            setmosb2(false)
+
+        }100
+
+
+    },)
 
 
     const emmmail = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -133,6 +173,7 @@ export default function page() {
 
             setname(e.target.value)
         }
+    }
 
     const matnee = (e: React.ChangeEvent<HTMLInputElement>) => {
         const regex = /^[\p{L}\s]*$/u;
@@ -404,35 +445,32 @@ export default function page() {
                         <div className='moshahede'>
                             <Image onClick={(event) => {
 
-                                setmosb(true)
                                 {
+                                    setmosb(true)
                                     setnumer(number + 1)
-                                    setmosb2(false)
+
                                 }
 
-                                setmosb(mosb === false)
                             }
 
-                            } width='32' height='32' style={{backgroundImage: 'black'}} src={zarbx} className='mosbat'
+                            } width='32' height='32' src={logo} className='mosbat'
                                    alt=''/>
+
                             <p className='pnumber'>{number}</p>
                             <Image onClick={(event) => {
-
+                                setmosb2(true)
 
                                 if (number < 0) {
                                     setnumer(number * 0)
 
-
                                 } else if (number > 0) {
                                     setnumer(number - 1)
-                                    setmosb2(true)
+
+
                                 }
 
-                                setmosb2(mosb2 === false)
-                                setmosb(false)
-
-
-                            }} width='32' height='32' src={mosb2 === true ? ghermez : zarb} alt=''/>
+                            }} width='32' height='32' src={logo2}
+                                   alt=''/>
                             <Link href='/' className='moshahedesabad'>مشاهده سبد خرید</Link>
                         </div>
                     </div>
@@ -485,6 +523,7 @@ export default function page() {
                     <button onClick={(e) => {
                         if (bull === true) {
                             setbull(false)
+
                         } else if (bull === false) {
                             setbull(true)
                         }

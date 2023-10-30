@@ -874,9 +874,12 @@ span {
 .mosbat:active{
    width: 32px;
     height: 32px;
-    border-radius: 50%;
-   color: gold;
+
+   background-image: url("../image/Add_round_fill (1).svg");
+
 }
+
+
 
 .vidcoment {
 

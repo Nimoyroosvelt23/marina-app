@@ -239,8 +239,9 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 20px;
-    height: 420px;
+    gap: 24px;
+    height: 438px;
+    padding-bottom: 10px;
 }
 
 .axballon {
@@ -861,7 +862,7 @@ span {
 
     margin-top: 24px;
     margin-bottom: 24px;
-    padding-right: 330px;
+    padding-right: 339px;
     overflow: no-content;
     display: flex;
     align-items: center;

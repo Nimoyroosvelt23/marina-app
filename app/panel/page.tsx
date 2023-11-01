@@ -101,9 +101,10 @@ export default function page() {
         email: string,
     }
 
-   const [like ,setlike] = useState(false)
-    const [save ,setsave] = useState(false)
-
+    const [sabtnazar, setsabtnazar] = useState(false)
+    const [like, setlike] = useState(false)
+    const [save, setsave] = useState(false)
+    const [comennt, setcomennt] = useState(false)
     const [name, setname] = useState("");
     const [lastname, setlastnamer] = useState('');
     const [matn, setmatn] = useState('');
@@ -129,7 +130,6 @@ export default function page() {
         }
 
 
-
         setmosb(false)
 
 
@@ -141,17 +141,16 @@ export default function page() {
                 setlogo2(zarb)
                 setmosb2(false)
 
-            }else
-            if (mosb2 === true) {
+            } else if (mosb2 === true) {
                 setlogo2(ghermez)
                 setmosb2(true)
             }
 
 
-
             setmosb2(false)
 
-        }10
+        }
+        10
 
 
     },)
@@ -273,27 +272,27 @@ export default function page() {
 
                     <div className='iconsamtrast'>
                         <div className='icon'>
-                            <Image width={save === true ? '30' :  '32'} height={save === true ? '30' :  '32'} onClick={()=>{
-                                if (save===false){
-                                    setsave(true)
-                                }else if (save === true){
+                            <Image width={save === true ? '30' : '32'} height={save === true ? '30' : '32'}
+                                   onClick={() => {
+                                       if (save === false) {
+                                           setsave(true)
+                                       } else if (save === true) {
 
-                                    setsave(false)
-                                }
+                                           setsave(false)
+                                       }
 
-                            }}  src={save === true ?saveblack : savve} alt=''/>
-                            <Image onClick={()=>{
-                                if (like===false){
+                                   }} src={save === true ? saveblack : savve} alt=''/>
+                            <Image onClick={() => {
+                                if (like === false) {
                                     setlike(true)
-                                }else if (like === true){
+                                } else if (like === true) {
 
                                     setlike(false)
                                 }
 
 
-
-
-                            }} width= {like === true ? '30' :  '32'} height={like === true ? '30' :  '32'} src={like === true ? rodliebe :likee} alt=''/>
+                            }} width={like === true ? '30' : '32'} height={like === true ? '30' : '32'}
+                                   src={like === true ? rodliebe : likee} alt=''/>
 
                         </div>
                         <div className='icon'>
@@ -503,11 +502,11 @@ export default function page() {
             </div>
             <div className='nazaratkarbardiv'>
                 <div className='nazarkarbarheader'>
-                    <Image src={line} width='280' alt=''/>
+                    <Image src={line} width='150' alt=''/>
                     <p className='nevnazarkarbar'>
                         نظرات کاربران
                     </p>
-                    <Image src={lin2} width='280' alt=''/>
+                    <Image src={lin2} width='150' alt=''/>
                 </div>
                 <div className='divdidgah55'>
                     <p className='didgah55'>
@@ -516,12 +515,14 @@ export default function page() {
                 </div>
                 <div className='coment' style={{
                     overflow: bull === true ? "visible" : 'hidden',
-                    height: bull === false ? '445px' : 'fit-content',
+                   height: bull === false ? '431px' : 'fit-content',
+
                 }}>
                     {cardcom.map((item, index) => {
 
-                        return (<div key={index} className='vidcoment'>
 
+
+                        return (<div key={index} className='vidcoment'>
 
                             <div className='khataval'>
                                 <p className='namecom'>
@@ -563,11 +564,11 @@ export default function page() {
                     </button>
                 </div>
                 <div className='nazarkarbarheader' style={{display: bull === true ? 'none' : 'flex'}}>
-                    <Image src={line} width='280' alt=''/>
+                    <Image src={line} width='128' alt=''/>
                     <p className='nevnazarkarbar2'>
                         نظر خود را با ما در میان بگذارید.
                     </p>
-                    <Image src={lin2} width='280' alt=''/>
+                    <Image src={lin2} width='128' alt=''/>
                 </div>
 
                 <div className='inputscom' style={{display: bull === true ? 'none' : 'flex'}}>
@@ -583,32 +584,60 @@ export default function page() {
                     <input value={matn} onChange={(e) => matnee(e)} type='text' placeholder='متن پیام...'
                            className='matnpayam'/>
 
-                    <div className='ersalpayam'>
+                    <div style={{display: sabtnazar === true ? 'none' : 'flex'}} className='ersalpayam'>
 
-                        <button onClick={() => {
-                            if (name !== "" && lastname !== '' && email !== '' && matn !== '') {
+                        <button
+                            style={{display: sabtnazar === true ? 'none' : 'flex'}}
 
-                                const cardcomt: cardcoment = {
-                                    name: name,
-                                    lastname: lastname,
-                                    email: email,
-                                    matn: matn,
+                            onClick={() => {
+                                if (name !== "" && lastname !== '' && email !== '' && matn !== '') {
+
+                                    const cardcomt: cardcoment = {
+                                        name: name,
+                                        lastname: lastname,
+                                        email: email,
+                                        matn: matn,
+                                    }
+
+                                    const temp = [...cardcom]
+                                    temp.push(cardcomt)
+                                    setcordcom(temp)
+
+                                    setemail('')
+                                    setname('')
+                                    setmatn('')
+                                    setlastnamer('')
+                                    setsabtnazar(true)
+
                                 }
-
-                                const temp = [...cardcom]
-                                temp.push(cardcomt)
-                                setcordcom(temp)
-
-                                setemail('')
-                                setname('')
-                                setmatn('')
-                                setlastnamer('')
-
-
-                            }
-                        }} className='buttomtala'><p className='pnazar'>ثبت نظر</p></button>
+                            }} className='buttomtala'><p className='pnazar'>ثبت نظر</p></button>
                     </div>
-                    <div style={{width: '100%', height: '20px'}}>
+                    <div className='tashakor' style={{display: sabtnazar === true ? 'flex' : 'none'}}>
+
+
+                            <div className='bala2' style={{display: sabtnazar === true ? 'flex' : 'none'}}>
+                                <Image src={line} width='128' alt=''/>
+                                <p className='taknafare5'>از نظر شما متشکریم!</p>
+                            </div>
+
+                            <div className='divnazak' style={{display: sabtnazar === true ? 'flex' : 'none'}}>
+
+
+                                <p className='nazark' style={{display: sabtnazar === true ? 'flex' : 'none'}}>
+                                    نظر شما پس از تایید مدیریت نمایش داده خواهد شد.
+
+                                </p>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div style={{width: '100%', height: '20px', display: sabtnazar === false ? "flex" : 'none'}}>
 
                     </div>
                 </div>

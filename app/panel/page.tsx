@@ -2,8 +2,11 @@
 import ballon from '../image/p.png';
 import ballonab from '../image/p2.png';
 import star from '../image/setar.png';
-import save from '../image/save.png';
-import like from '../image/hurt.png'
+import savve from '../image/save.png';
+import likee from '../image/hurt.png';
+import saveblack from '../image/shwizsavve.png';
+import rodliebe from '../image/rotlike.png';
+
 import line from '../image/Line 18.png'
 import keshti from '../image/kish.png'
 import ax1 from '../image/1.png';
@@ -98,6 +101,8 @@ export default function page() {
         email: string,
     }
 
+   const [like ,setlike] = useState(false)
+    const [save ,setsave] = useState(false)
 
     const [name, setname] = useState("");
     const [lastname, setlastnamer] = useState('');
@@ -146,7 +151,7 @@ export default function page() {
 
             setmosb2(false)
 
-        }100
+        }10
 
 
     },)
@@ -268,8 +273,27 @@ export default function page() {
 
                     <div className='iconsamtrast'>
                         <div className='icon'>
-                            <Image width='32' height='32' src={save} alt=''/>
-                            <Image width='32' height='32' src={like} alt=''/>
+                            <Image width={save === true ? '30' :  '32'} height={save === true ? '30' :  '32'} onClick={()=>{
+                                if (save===false){
+                                    setsave(true)
+                                }else if (save === true){
+
+                                    setsave(false)
+                                }
+
+                            }}  src={save === true ?saveblack : savve} alt=''/>
+                            <Image onClick={()=>{
+                                if (like===false){
+                                    setlike(true)
+                                }else if (like === true){
+
+                                    setlike(false)
+                                }
+
+
+
+
+                            }} width= {like === true ? '30' :  '32'} height={like === true ? '30' :  '32'} src={like === true ? rodliebe :likee} alt=''/>
 
                         </div>
                         <div className='icon'>

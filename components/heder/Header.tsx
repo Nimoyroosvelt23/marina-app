@@ -1,12 +1,9 @@
 import React from "react";
 import styles from "./header.module.css";
-// import img from 'icon/logo-kish-enjoy.png';
-// import img_base from "./icon/6700291cf247dfdcdf3ae66be08f520e.jpg";
 import Image from "next/image";
-// import icon1 from "./icon/Expand_down.svg";
 function Header() {
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.glass_box}>
         <h2 className={styles.h2_1}>بگرد، انتخاب کن، لذت ببر</h2>
         <div className={styles.p_glassbox}>
@@ -102,8 +99,8 @@ function Header() {
         <h1 className={styles.h1}>خلق خاطره‌های بی‌نظیر</h1>
         <h2 className={styles.h2}>لحظاتی از آرامش در برابر امواج</h2>
       </div>
-      <div className={styles.asss}></div>
-    </div>
+          </>
+
   );
 }
 

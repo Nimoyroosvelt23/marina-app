@@ -1,4 +1,6 @@
 "use client"
+import Calendar from 'react-calendar';
+
 import ballon from '../image/p.png';
 import ballonab from '../image/p2.png';
 import star from '../image/setar.png';
@@ -6,7 +8,6 @@ import savve from '../image/save.png';
 import likee from '../image/hurt.png';
 import saveblack from '../image/shwizsavve.png';
 import rodliebe from '../image/rotlike.png';
-
 import line from '../image/Line 18.png'
 import keshti from '../image/kish.png'
 import ax1 from '../image/1.png';
@@ -25,7 +26,7 @@ import zarb from '../image/zz.png';
 import zarbx from '../image/zzzz.svg'
 import mosbat from '../image/mosbat.png';
 import Link from 'next/link';
-import {useEffect, useState} from 'react';
+import {ReactNode, useEffect, useState} from 'react';
 import balllonab from '../image/ballonro.png';
 import Image from "next/image";
 import lin2 from '../image/line2.png';
@@ -34,15 +35,22 @@ import flash from '../image/flash.png';
 import gold from '../image/mosbatgold.png';
 import ghermez from '../image/zarbghemz.png';
 import './panel.css'
-import {Calendar, CalendarProvider} from "zaman";
-import {url} from "inspector";
+
+import moment, { Moment } from 'moment-jalaali';
+
+
 
 export default function page() {
+
+
+
 
 
     const [cardcom, setcordcom] = useState([{
         name: 'محمد',
         lastname: 'علوی',
+        date:('1400-01-03', 'jYYYY-jMM-jDD'),
+
         matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
     },
         {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
@@ -82,29 +90,33 @@ export default function page() {
         {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
         {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
 
-        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
 
-        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
-        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
 
-        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+        {
+
+            name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . ',
+
+            date:('1400-01-03', 'jYYYY-jMM-jDD'),
+        },
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn:'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
 
 
     ]);
 
     interface cardcoment {
+        date:  any,
         name: string,
         lastname: string,
         matn: string,
         email: string,
     }
 
+    const [date, setDate] = useState<Moment>(moment());
+
+    console.log('k',date)
     const [sabtnazar, setsabtnazar] = useState(false)
     const [like, setlike] = useState(false)
     const [save, setsave] = useState(false)
-    const [comennt, setcomennt] = useState(false)
     const [name, setname] = useState("");
     const [lastname, setlastnamer] = useState('');
     const [matn, setmatn] = useState('');
@@ -395,7 +407,19 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
+
                             <div className='calnder'>
+
+
+                                <div className='calendar-container'>
+                                <Calendar
+                                    onChange={date => setDate(moment(date))}
+                                    value={date.toDate()}
+
+                                />
+
+                            </div>
+
                             </div>
                             <div className='baghicalnnder'>
 
@@ -522,11 +546,12 @@ export default function page() {
 
 
 
+
                         return (<div key={index} className='vidcoment'>
 
                             <div className='khataval'>
-                                <p className='namecom'>
-                                    {item.name} - 10 اردیبهشت 1402
+                                <p  className='namecom'>
+                                    {item.name} {date.locale('fa').format('YYYY/jMM/jDD')}
                                 </p>
                                 <div className='star'>
                                     <Image src={star} width='16' height='16' alt=''/>
@@ -591,12 +616,14 @@ export default function page() {
 
                             onClick={() => {
                                 if (name !== "" && lastname !== '' && email !== '' && matn !== '') {
+                                       setDate(date)
 
-                                    const cardcomt: cardcoment = {
+                                    const cardcomt : cardcoment = {
                                         name: name,
                                         lastname: lastname,
                                         email: email,
                                         matn: matn,
+                                        date:date,
                                     }
 
                                     const temp = [...cardcom]

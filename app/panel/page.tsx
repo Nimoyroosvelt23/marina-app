@@ -40,9 +40,21 @@ import moment, { Moment } from 'moment-jalaali';
 
 
 
+
+
 export default function page() {
 
+    const onChange = (newDate) => {
+        setDate(moment(newDate));
+    }
 
+    const isToday = (date) => {
+        return moment(date).isSame(moment(), 'day');
+    }
+
+    const tileClassName = ({ date }) => {
+        return isToday(date) ? 'today' : '';
+    }
 
 
 
@@ -113,6 +125,7 @@ export default function page() {
 
     const [date, setDate] = useState<Moment>(moment());
 
+
     console.log('k',date)
     const [sabtnazar, setsabtnazar] = useState(false)
     const [like, setlike] = useState(false)
@@ -162,7 +175,7 @@ export default function page() {
             setmosb2(false)
 
         }
-        10
+
 
 
     },)
@@ -407,15 +420,19 @@ export default function page() {
                             </p>
                         </div>
                         <div className='taghvim'>
+                            <div className='divkhordad'>
+                                <p className='khordadian'>  {date.format('jMMMM')} </p>
+                            </div>
 
                             <div className='calnder'>
 
 
                                 <div className='calendar-container'>
                                 <Calendar
-                                    onChange={date => setDate(moment(date))}
+                                    tileClassName={tileClassName}
                                     value={date.toDate()}
-
+                                    locale="fa-IR"
+                                    onChange={onChange}
                                 />
 
                             </div>
@@ -551,7 +568,8 @@ export default function page() {
 
                             <div className='khataval'>
                                 <p  className='namecom'>
-                                    {item.name} {date.locale('fa').format('YYYY/jMM/jDD')}
+
+                                    {item.name} {date.format('jYYYY/jMM/jDD')}
                                 </p>
                                 <div className='star'>
                                     <Image src={star} width='16' height='16' alt=''/>
@@ -615,15 +633,16 @@ export default function page() {
                             style={{display: sabtnazar === true ? 'none' : 'flex'}}
 
                             onClick={() => {
+
                                 if (name !== "" && lastname !== '' && email !== '' && matn !== '') {
-                                       setDate(date)
+
 
                                     const cardcomt : cardcoment = {
                                         name: name,
                                         lastname: lastname,
                                         email: email,
                                         matn: matn,
-                                        date:date,
+                                        date:date.format('jYYYY/jMM/jDD')
                                     }
 
                                     const temp = [...cardcom]

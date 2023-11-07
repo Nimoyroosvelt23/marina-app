@@ -303,11 +303,17 @@ function Center() {
           <div className={styles.img7_comment}></div>
         </div>
       </div>
-      <div className={styles.divhr2}>
-        <Image src={"/icon/Line 27.svg"} alt="item" width={460} height={30} />
-        <p className={styles.phr2}>شما هم نظر دهید</p>
-        <Image src={"/icon/Line 26.svg"} alt="item" width={460} height={30} />
-      </div>
+      <div className={styles.divhr4}>
+          <div className={styles.divhr3}>
+            <div className={styles.hr3}></div>
+            <span className={styles.point3}></span>
+          </div>
+          <p className={styles.phr3}>شما هم نظر دهید</p>
+          <div className={styles.divhr3}>
+            <span className={styles.point4}></span>
+            <div className={styles.hr3}></div>
+          </div>
+        </div>
       <div className={styles.div_input}>
         <input
           className={styles.input}
@@ -323,9 +329,9 @@ function Center() {
         />
       </div>
       <div className={styles.div_base_question}>
-        <div className={styles.divhr4}>
+        <div className={styles.divhr5}>
           <div className={styles.divhr3}>
-            <div className={styles.hr2}></div>
+            <div className={styles.hr3}></div>
             <span className={styles.point3}></span>
           </div>
           <p className={styles.phr3}>سوالات متداول</p>

@@ -252,6 +252,7 @@ body {
 }
 
 .links {
+    gap: 24px;
     padding-right: 40px;
     height: 100%;
     width: 67%;
@@ -607,7 +608,7 @@ span {
 }
 
 .price {
-    
+
     color: #000;
     text-align: right;
     font-family: var(--regular);

@@ -16,6 +16,13 @@ import ngo from '../image/ngo.png'
 import ngo2 from '../image/ngo2.png';
 import ngo3 from '../image/ngo3.png';
 import ballonn from '../image/parashot.png'
+import antrag from '../image/antrag.png'
+import man from '../image/man.png'
+import anrufen from '../image/telephone.png'
+import zarin from '../image/zarinpars.png'
+import up from '../image/up.png'
+import melat from '../image/melt.png'
+import parsian from '../image/parsian.png'
 import icon from '../image/icon.png';
 import Image from "next/image";
 
@@ -173,11 +180,108 @@ export default function page() {
                                 </button>
                             </div>
                         </div>
+                        <div className='divtakhfif'>
+                            <div className='takhfif'>
+                                <p className='ptakhfif'>
+                                    افزودن کد تخفیف:
+                                </p>
+                            </div>
+                        </div>
+                        <div className='divtakhfif2'>
+                            <div className='takhfif2'>
 
+                                <div className='info1'>
+                                    <Image src={antrag} className='acivo' alt=''/>
+                                    <p className='pinfo1'>کد سفارش :</p>
+                                    <p className='spinfo1'>46885244</p>
+                                </div>
+
+                                <div className='info2'>
+                                    <Image className='acivo2' src={man} alt=''/>
+                                    <p className='pinfo2'>تحویل گیرنده :</p>
+                                    <p className='spinfo2'>نیمافخرائی</p>
+                                </div>
+
+                                <div className='info3'>
+                                    <Image className='acivo2' src={anrufen} alt=''/>
+                                    <p className='pinfo1'>شماره تماس :</p>
+                                    <p className='spinfo1'>989373508036+</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className='divtakhfif3'>
+
+                            <div className='uptakhfif3'>
+
+                                <p className='ppardakht'>انتخاب درگاه پرداخت</p>
+                            </div>
+                            <div className='downtakhfif3'>
+                                <div className='divbakpick'>
+                                    <Image src={zarin} className='bakpick' alt=''/>
+                                </div>
+                                <Image src={melat} className='bakpick2' alt=''/>
+                                <Image src={up} className='bakpick3' alt=''/>
+                                <Image src={parsian} className='bakpick4' alt=''/>
+                            </div>
+
+                        </div>
 
                     </div>
 
                     <div className='recht'>
+                        <div className='tabel'>
+                            <div className='tabel2'>
+                                <div className='tabel2v'>
+                                    <p className='ghymmat'>
+                                        قیمت تفریحات
+                                    </p>
+                                    <p className='ghymmat'>
+                                        جمع سبد خرید
+                                    </p>
+                                </div>
+                                <div className='tabel2v2'>
+                                    <div className='duvvghymmat'>
+                                          <div className='kghymmat'>
+
+                                          </div>
+                                        <p className='ghymmat'>
+                                            2×645,000
+                                        </p>
+
+                                    </div>
+
+                                    <div className='duvvghymmat'>
+                                        <div className='kghymmat2'>
+
+                                        </div>
+                                    <p className='gghymmat'>
+                                        1,308,000 تومان
+                                    </p>
+                                </div>
+
+                                </div>
+                            </div>
+
+                            <div className='tabel3'>
+
+
+                                <button className='tabelbuuton'>
+
+
+                                         <p className='ppardakht'>
+                                             پرداخت
+                                         </p>
+                                </button>
+
+                            </div>
+                        </div>
+
+                            <p className='pipradkht'>
+                                هزینه این رزرو هنوز پرداخت نشده و در صورت پر شدن ساعت های خالی، از سبد خرید شما حذف می شود.
+                            </p>
 
                     </div>
 

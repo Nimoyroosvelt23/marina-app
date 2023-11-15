@@ -30,7 +30,10 @@ import Image from "next/image";
 export default function page() {
 
     const [counter, setcounter] = useState<number>(0)
-
+    const [box, setbox] = useState<boolean>(false)
+    const [box2, setbox2] = useState(false)
+    const [box3, setbox3] = useState(false)
+    const [box4, setbox4] = useState(false)
 
     return (
         <div className="divkol">
@@ -220,11 +223,105 @@ export default function page() {
                             </div>
                             <div className='downtakhfif3'>
                                 <div className='divbakpick'>
-                                    <Image src={zarin} className='bakpick' alt=''/>
+
+                                    <div className='divtiktik2'>
+                                        <div className='tiktik2'> <div style={{background:box===false ? '#E0E0E0' : '#07D95A'}} onClick={()=>{
+                                                  if (box === false){
+                                                       setbox(true)
+                                                      setbox2(false)
+                                                      setbox3(false)
+                                                      setbox4(false)
+                                                  }else     if (box === true){
+
+                                                      setbox2(true)
+                                                      setbox3(true)
+                                                      setbox4(true)
+                                                  }
+
+
+
+                                        }} className='inputchex' /></div>
+                                        <Image src={zarin} className='bakpick' alt=''/>
                                 </div>
-                                <Image src={melat} className='bakpick2' alt=''/>
-                                <Image src={up} className='bakpick3' alt=''/>
-                                <Image src={parsian} className='bakpick4' alt=''/>
+                                </div>
+                                <div className='divtiktik'>
+                                    <div className='tiktik'> <div
+
+                                        style={{background:box2===false ? '#E0E0E0' : '#07D95A'}}
+                                        onClick={()=>{
+                                            if (box2 === false){
+                                                setbox2(true)
+                                                setbox(false)
+                                                setbox3(false)
+                                                setbox4(false)
+                                            }else     if (box2 === true){
+
+                                                setbox(true)
+                                                setbox3(true)
+                                                setbox4(true)
+                                            }
+
+                                        }}
+
+
+                                        className='inputchex' /></div>
+                                    <Image src={melat} className='bakpick2' alt=''/>
+
+                                </div>
+
+
+
+                                <div className='divtiktik'>
+                                    <div className='tiktik'> <div
+
+                                        style={{background:box3===false ? '#E0E0E0' : '#07D95A'}}
+                                        onClick={()=>{
+                                            if (box3 === false){
+                                                setbox3(true)
+                                                setbox(false)
+                                                setbox2(false)
+                                                setbox4(false)
+                                            }else     if (box3 === true){
+
+                                                setbox(true)
+                                                setbox2(true)
+                                                setbox4(true)
+                                            }
+
+                                        }}
+
+
+
+                                        className='inputchex' /></div>
+
+                                    <Image src={up} className='bakpick3' alt=''/>
+
+                               </div>
+                                <div className='divtiktik'>
+                                    <div className='tiktik'> <div
+                                        style={{background:box4===false ? '#E0E0E0' : '#07D95A'}}
+                                        onClick={()=>{
+                                            if (box4 === false){
+                                                setbox4(true)
+                                                setbox(false)
+                                                setbox2(false)
+                                                setbox3(false)
+                                            }else     if (box4 === true){
+
+                                                setbox(true)
+                                                setbox2(true)
+                                                setbox3(true)
+                                            }
+
+                                        }}
+
+
+
+
+                                        className='inputchex' /></div>
+
+                                    <Image src={parsian} className='bakpick4' alt=''/>
+                            </div>
                             </div>
 
                         </div>
@@ -285,7 +382,13 @@ export default function page() {
 
                     </div>
 
-
+                </div>
+                <div className='tafrihatdaryayi'>
+                      <div className='tafrihatdaryayi90'>
+                              <p className='ptafrihh'>
+                                  تفریحات مرتبط
+                              </p>
+                      </div>
                 </div>
             </div>
             <div className='end'>

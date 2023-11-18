@@ -1,4 +1,7 @@
 "use client"
+
+
+
 import './card.css';
 import React, {useState} from "react";
 import line from '../image/Line 18.png'
@@ -23,8 +26,14 @@ import zarin from '../image/zarinpars.png'
 import up from '../image/up.png'
 import melat from '../image/melt.png'
 import parsian from '../image/parsian.png'
+
+import 'swiper/css';
+
+
+
 import icon from '../image/icon.png';
 import Image from "next/image";
+import Kinsliders from "./kinslider";
 
 
 export default function page() {
@@ -390,7 +399,15 @@ export default function page() {
                               </p>
                       </div>
                 </div>
+                <div className='divscroll'>
+                    
+                </div>
+                <div className='santakhar'>
+
+                </div>
             </div>
+
+
             <div className='end'>
                 <Image alt="" src={keshti} height='91' width='176'/>
 

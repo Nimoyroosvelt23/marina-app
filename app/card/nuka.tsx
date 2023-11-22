@@ -11,7 +11,7 @@ const renderCenterLeftControls = ({ previousSlide, currentSlide }) => (
     <button
         className="slider-control-button"
         onClick={previousSlide}
-        disabled={currentSlide === 0}
+        disabled={currentSlide === 5}
     >
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,8 @@ const renderCenterLeftControls = ({ previousSlide, currentSlide }) => (
             stroke-linecap="round"
             stroke-linejoin="round"
         >
-            <path d="M15 18l-6-6 6-6" />
+            <path d="M9 18l6-6-6-6" />
+
         </svg>
     </button>
 );
@@ -38,6 +39,7 @@ const renderCenterRightControls = ({
     console.log(currentSlide, slideCount, slidesToShow);
     return (
         <button
+
             className="slider-control-button"
             onClick={nextSlide}
             disabled={currentSlide + slidesToShow === slideCount}
@@ -53,7 +55,7 @@ const renderCenterRightControls = ({
                 stroke-linecap="round"
                 stroke-linejoin="round"
             >
-                <path d="M9 18l6-6-6-6" />
+                <path d="M15 18l-6-6 6-6" />
             </svg>
         </button>
     );

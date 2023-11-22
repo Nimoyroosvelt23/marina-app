@@ -25,6 +25,7 @@ gap: 10px;
 
 .section + .section {
     margin-top: 48px;
+
 }
 
 .slider-control-centerleft {
@@ -36,8 +37,14 @@ gap: 10px;
 }
 
 .slider-control-bottomcenter {
-    bottom: -24px !important;
+    bottom: 24px !important;
+
 }
+
+.section{
+    margin: 20px;
+}
+
 
 .slider-control-button {
 

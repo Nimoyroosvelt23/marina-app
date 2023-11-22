@@ -1,7 +1,6 @@
 "use client"
 
 
-
 import './card.css';
 import React, {useState} from "react";
 import line from '../image/Line 18.png'
@@ -27,13 +26,10 @@ import up from '../image/up.png'
 import melat from '../image/melt.png'
 import parsian from '../image/parsian.png'
 
-import 'swiper/css';
-
-
 
 import icon from '../image/icon.png';
 import Image from "next/image";
-import Kinsliders from "./kinslider";
+import NUka from "./nuka";
 
 
 export default function page() {
@@ -46,8 +42,6 @@ export default function page() {
 
     return (
         <div className="divkol">
-
-
             <div className='header'>
                 <ul className='item_header'>
                     <div className='right_header'>
@@ -234,103 +228,107 @@ export default function page() {
                                 <div className='divbakpick'>
 
                                     <div className='divtiktik2'>
-                                        <div className='tiktik2'> <div style={{background:box===false ? '#E0E0E0' : '#07D95A'}} onClick={()=>{
-                                                  if (box === false){
-                                                       setbox(true)
-                                                      setbox2(false)
-                                                      setbox3(false)
-                                                      setbox4(false)
-                                                  }else     if (box === true){
+                                        <div className='tiktik2'>
+                                            <div style={{background: box === false ? '#E0E0E0' : '#07D95A'}}
+                                                 onClick={() => {
+                                                     if (box === false) {
+                                                         setbox(true)
+                                                         setbox2(false)
+                                                         setbox3(false)
+                                                         setbox4(false)
+                                                     } else if (box === true) {
 
-                                                      setbox2(true)
-                                                      setbox3(true)
-                                                      setbox4(true)
-                                                  }
+                                                         setbox2(true)
+                                                         setbox3(true)
+                                                         setbox4(true)
+                                                     }
 
 
-
-                                        }} className='inputchex' /></div>
+                                                 }} className='inputchex'/>
+                                        </div>
                                         <Image src={zarin} className='bakpick' alt=''/>
-                                </div>
+                                    </div>
                                 </div>
                                 <div className='divtiktik'>
-                                    <div className='tiktik'> <div
+                                    <div className='tiktik'>
+                                        <div
 
-                                        style={{background:box2===false ? '#E0E0E0' : '#07D95A'}}
-                                        onClick={()=>{
-                                            if (box2 === false){
-                                                setbox2(true)
-                                                setbox(false)
-                                                setbox3(false)
-                                                setbox4(false)
-                                            }else     if (box2 === true){
+                                            style={{background: box2 === false ? '#E0E0E0' : '#07D95A'}}
+                                            onClick={() => {
+                                                if (box2 === false) {
+                                                    setbox2(true)
+                                                    setbox(false)
+                                                    setbox3(false)
+                                                    setbox4(false)
+                                                } else if (box2 === true) {
 
-                                                setbox(true)
-                                                setbox3(true)
-                                                setbox4(true)
-                                            }
+                                                    setbox(true)
+                                                    setbox3(true)
+                                                    setbox4(true)
+                                                }
 
-                                        }}
+                                            }}
 
 
-                                        className='inputchex' /></div>
+                                            className='inputchex'/>
+                                    </div>
                                     <Image src={melat} className='bakpick2' alt=''/>
 
                                 </div>
 
 
-
                                 <div className='divtiktik'>
-                                    <div className='tiktik'> <div
+                                    <div className='tiktik'>
+                                        <div
 
-                                        style={{background:box3===false ? '#E0E0E0' : '#07D95A'}}
-                                        onClick={()=>{
-                                            if (box3 === false){
-                                                setbox3(true)
-                                                setbox(false)
-                                                setbox2(false)
-                                                setbox4(false)
-                                            }else     if (box3 === true){
+                                            style={{background: box3 === false ? '#E0E0E0' : '#07D95A'}}
+                                            onClick={() => {
+                                                if (box3 === false) {
+                                                    setbox3(true)
+                                                    setbox(false)
+                                                    setbox2(false)
+                                                    setbox4(false)
+                                                } else if (box3 === true) {
 
-                                                setbox(true)
-                                                setbox2(true)
-                                                setbox4(true)
-                                            }
+                                                    setbox(true)
+                                                    setbox2(true)
+                                                    setbox4(true)
+                                                }
 
-                                        }}
+                                            }}
 
 
-
-                                        className='inputchex' /></div>
+                                            className='inputchex'/>
+                                    </div>
 
                                     <Image src={up} className='bakpick3' alt=''/>
 
-                               </div>
+                                </div>
                                 <div className='divtiktik'>
-                                    <div className='tiktik'> <div
-                                        style={{background:box4===false ? '#E0E0E0' : '#07D95A'}}
-                                        onClick={()=>{
-                                            if (box4 === false){
-                                                setbox4(true)
-                                                setbox(false)
-                                                setbox2(false)
-                                                setbox3(false)
-                                            }else     if (box4 === true){
+                                    <div className='tiktik'>
+                                        <div
+                                            style={{background: box4 === false ? '#E0E0E0' : '#07D95A'}}
+                                            onClick={() => {
+                                                if (box4 === false) {
+                                                    setbox4(true)
+                                                    setbox(false)
+                                                    setbox2(false)
+                                                    setbox3(false)
+                                                } else if (box4 === true) {
 
-                                                setbox(true)
-                                                setbox2(true)
-                                                setbox3(true)
-                                            }
+                                                    setbox(true)
+                                                    setbox2(true)
+                                                    setbox3(true)
+                                                }
 
-                                        }}
-
-
+                                            }}
 
 
-                                        className='inputchex' /></div>
+                                            className='inputchex'/>
+                                    </div>
 
                                     <Image src={parsian} className='bakpick4' alt=''/>
-                            </div>
+                                </div>
                             </div>
 
                         </div>
@@ -350,9 +348,9 @@ export default function page() {
                                 </div>
                                 <div className='tabel2v2'>
                                     <div className='duvvghymmat'>
-                                          <div className='kghymmat'>
+                                        <div className='kghymmat'>
 
-                                          </div>
+                                        </div>
                                         <p className='ghymmat'>
                                             2×645,000
                                         </p>
@@ -363,10 +361,10 @@ export default function page() {
                                         <div className='kghymmat2'>
 
                                         </div>
-                                    <p className='gghymmat'>
-                                        1,308,000 تومان
-                                    </p>
-                                </div>
+                                        <p className='gghymmat'>
+                                            1,308,000 تومان
+                                        </p>
+                                    </div>
 
                                 </div>
                             </div>
@@ -377,36 +375,39 @@ export default function page() {
                                 <button className='tabelbuuton'>
 
 
-                                         <p className='ppardakht'>
-                                             پرداخت
-                                         </p>
+                                    <p className='ppardakht'>
+                                        پرداخت
+                                    </p>
                                 </button>
 
                             </div>
                         </div>
 
-                            <p className='pipradkht'>
-                                هزینه این رزرو هنوز پرداخت نشده و در صورت پر شدن ساعت های خالی، از سبد خرید شما حذف می شود.
-                            </p>
+                        <p className='pipradkht'>
+                            هزینه این رزرو هنوز پرداخت نشده و در صورت پر شدن ساعت های خالی، از سبد خرید شما حذف می شود.
+                        </p>
 
                     </div>
 
                 </div>
                 <div className='tafrihatdaryayi'>
-                      <div className='tafrihatdaryayi90'>
-                              <p className='ptafrihh'>
-                                  تفریحات مرتبط
-                              </p>
-                      </div>
+                    <div className='tafrihatdaryayi90'>
+                        <p className='ptafrihh'>
+                            تفریحات مرتبط
+                        </p>
+                    </div>
                 </div>
                 <div className='divscroll'>
-                    
+
+                    <div className='divscroll2'>
+                        <NUka/>
+                    </div>
+
                 </div>
                 <div className='santakhar'>
 
                 </div>
             </div>
-
 
             <div className='end'>
                 <Image alt="" src={keshti} height='91' width='176'/>

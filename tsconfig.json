@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/profile/linechart.tsx", "app/profile/transaction.tsx", "app/contact/contectUs.tsx"  ],
   "exclude": [
     "node_modules"
   ]

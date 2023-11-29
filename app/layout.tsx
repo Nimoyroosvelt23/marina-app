@@ -1,4 +1,5 @@
 import "./globals.css";
+import './panel/panel.css'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -26,12 +27,10 @@ const small = localFont({
   variable: "--small",
 });
 
-const mediums = localFont({
-  src: "./font/Farsi numerals/IRANSansXFaNum-Bold.ttf",
-
-  variable: "--mediums",
+const bolder = localFont({
+  src: "./font/iransansX family/IRANSansX-ExtraBold.ttf",
+  variable: "--bolder",
 });
-
 
 
 export const metadata: Metadata = {
@@ -48,7 +47,7 @@ export default function RootLayout({
     <html lang="fa">
       <body
       dir="rtl"
-        className={`${regular.variable} ${medium.variable} ${bold.variable} ${small.variable} ${bolder.variable}${mediums.variable}`}
+        className={`${regular.variable} ${medium.variable} ${bold.variable} ${small.variable} ${bolder.variable}  `}
       >
         {children}
       </body>

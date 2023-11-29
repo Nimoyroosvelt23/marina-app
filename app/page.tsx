@@ -5,10 +5,15 @@ import Image from "next/image";
 import icon1 from "./icon/Expand_down.svg";
 import RootLayout from "./layout";
 import Header from "@/components/heder/Header";
+import Center from "@/components/home-page/Center";
 export default function Landing() {
   return (
     <RootLayout>
+    <div className={styles.container}>
+      
       <Header/>
-    </RootLayout>
+      <Center/>
+    </div>
+  </RootLayout>
   );
 }

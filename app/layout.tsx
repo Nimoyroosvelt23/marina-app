@@ -22,10 +22,7 @@ const bold = localFont({
   variable: "--bold",
 });
 
-const bolder = localFont({
-  src: "./font/iransansX family/IRANSansX-ExtraBold.ttf",
-  variable: "--bolder",
-});
+
 
 
 const small = localFont({

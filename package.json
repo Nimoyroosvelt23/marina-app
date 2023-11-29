@@ -9,17 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "chart.js": "^4.4.0",
+    "framer-motion": "^10.16.5",
     "keen-slider": "^6.8.6",
     "next": "latest",
     "nuka-carousel": "^7.0.0",
     "react": "latest",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "latest",
+    "react-transition-group": "^4.4.5",
     "swiper": "^10.3.1"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-transition-group": "^4.4.9",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "typescript": "latest"

@@ -1,0 +1,167 @@
+.body{
+    background-size: cover;
+    max-width: 1440px;
+    width: 100%;
+   height: 1006px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    background-image: url("../image/Rectangle 4.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: no-content;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.bodys{
+    display:flex;
+    padding: 64px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+    width: 480px;
+    height: 624px;
+    gap: 81px;
+    flex-direction: column;
+}
+.khat1{
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pkhataval{
+    color: #1E1E1E;
+    font-family: var(--bold);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.khat2{
+    width: 352px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #CBCBCB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pkhatdovom2{
+    color: var(--black, #393939);
+    font-family: var(--regular);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: all-small-caps;
+    width: 70px;
+    height: 21px;
+}
+
+.pkhatdovom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.yakkhatdivim{
+    gap: 24px;
+
+
+}
+.yay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    position: relative;
+
+}
+
+.yayp{
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    flex-shrink: 0;
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--medium);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-variant: all-small-caps;
+}
+.fasele{
+    height: 21px;
+    width:100% ;
+}
+.inpun{
+    border-radius: 4px;
+    border: 1px solid var(--light-bw-cbcbcb, #CBCBCB);
+    background: var(--light-back-ffffff, #FFF);
+    display: flex;
+    width: 70px;
+    padding: 17px 16px 18px 263px;
+    justify-content: flex-end;
+    align-items: center;
+    color: #666;
+    text-align: right;
+    font-family: var(--medium);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-variant: all-small-caps;
+    outline: none;
+    gap: 16px;
+}
+.buttemm{
+    display: flex;
+    width: 352px;
+    height: 56px;
+    padding: 14px 24px 13px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #DD9800;
+    border: none;
+
+}
+
+.tbuttem{
+    color: var(--FFFFFF, #FFF);
+    font-family: var(--small);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: all-small-caps;
+    width: 90px;
+    height: 21px;
+}
+.divdivinput{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+}
+.divbuttom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+}

@@ -1,8 +1,10 @@
 import "./globals.css";
 import './panel/panel.css'
+import './entertainmentlist/entertainmentl.css'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,14 +16,18 @@ const regular = localFont({
   src: "./font/iransansX family/IRANSansX-Regular.ttf",
   variable: "--regular",
 });
+
 const bold = localFont({
   src: "./font/iransansX family/IRANSansX-Bold.ttf",
   variable: "--bold",
 });
+
 const bolder = localFont({
   src: "./font/iransansX family/IRANSansX-ExtraBold.ttf",
   variable: "--bolder",
 });
+
+
 const small = localFont({
   src: "./font/Farsi numerals/IRANSansXFaNum-Light.ttf",
   variable: "--small",

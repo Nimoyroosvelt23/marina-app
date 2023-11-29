@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./center.module.css";
 import Image from "next/image";
 // import { useRef, useState } from "react";
@@ -13,6 +13,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Slider from "./Slider";
 import Slider2 from "./Slider2";
 function Center() {
+  const [inputValue, setInputVlaue] = useState<string>("");
   const NameWaterSports = [
     {
       img: "/icon/Group1.svg",
@@ -35,6 +36,7 @@ function Center() {
       text: "فرصتی برای رهایی از همه دردهای روزمره و لذت بردن از آرامش و طبیعت زیبای دریا می باشد.",
     },
   ];
+  console.log(inputValue);
   return (
     <>
       <div className={styles.water1_sports}>
@@ -121,26 +123,9 @@ function Center() {
       </div>
       <div className={styles.div_slider_2}>
         <Slider />
-        <Slider2/>
+        <Slider2 />
       </div>
-      <div className={styles.oferr}>
-        <p className={styles.p1_oferr}>
-          تخفیف برای اجاره کایاک های تک نفره و دو نفره
-        </p>
-        <div className={styles.div_bottun_oferr}>
-          <p className={styles.p2_oferr}>فقط برای اولین ثبت نامی ها</p>
-          <button className={styles.button_oferr}>
-            <Image
-              src={"/icon/Arrow_right.png"}
-              alt="item"
-              width={24}
-              height={24}
-            />
-            ثبت نام کنید{" "}
-          </button>
-        </div>
-        <div className={styles.div_pura}></div>
-      </div>
+      <div className={styles.oferr}></div>
       <div className={styles.divhr2}>
         <Image src={"/icon/Line 27.svg"} alt="item" width={360} height={160} />
 
@@ -304,28 +289,33 @@ function Center() {
         </div>
       </div>
       <div className={styles.divhr4}>
-          <div className={styles.divhr3}>
-            <div className={styles.hr3}></div>
-            <span className={styles.point3}></span>
-          </div>
-          <p className={styles.phr3}>شما هم نظر دهید</p>
-          <div className={styles.divhr3}>
-            <span className={styles.point4}></span>
-            <div className={styles.hr3}></div>
-          </div>
+        <div className={styles.divhr3}>
+          <div className={styles.hr3}></div>
+          <span className={styles.point3}></span>
         </div>
+        <p className={styles.phr3}>شما هم نظر دهید</p>
+        <div className={styles.divhr3}>
+          <span className={styles.point4}></span>
+          <div className={styles.hr3}></div>
+        </div>
+      </div>
       <div className={styles.div_input}>
         <input
           className={styles.input}
           placeholder="نوشتن دیدگاه"
           type="text"
+          value={inputValue}
+          onChange={(e) => {
+            setInputVlaue(e.target.value);
+          
+          }}
         />
         <Image
           style={{ marginLeft: "24px" }}
-          src="/icon/Group6.svg"
+          src="/icon/send.svg"
           alt=""
-          width={24}
-          height={24}
+          width={32}
+          height={32}
         />
       </div>
       <div className={styles.div_base_question}>

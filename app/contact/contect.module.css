@@ -171,6 +171,7 @@
   font-weight: 300;
   outline: none;
   word-wrap: break-word;
+  resize: none;
 }
 .button1 {
   width: 352px;

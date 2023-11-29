@@ -1,8 +1,34 @@
 "use client";
-import React from "react";
+import React, { use, useState } from "react";
 import Image from "next/image";
 import styles from "./contect.module.css";
+import Link from "next/link";
 function ContectUs() {
+  interface input {
+    name: string;
+    email: string;
+    text: string;
+  }
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const [allData, setAllData] = useState<input[]>([]);
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    let inputData = {
+      name,
+      email,
+      text,
+    };
+    let copy = [...allData,inputData];
+    setAllData(copy);
+    setName("");
+    setEmail("");
+    setText(""); 
+  }
+
+  console.log(allData);
   return (
     <>
       <div className={styles.base_hr}>
@@ -14,8 +40,9 @@ function ContectUs() {
           <p className={styles.phr3}>تماس با ما</p>
         </div>
       </div>
-      <div className={styles.div_base_contect}>
-        <div className={styles.map_img}></div>
+      <form className={styles.div_base_contect} >
+        
+        <a className={styles.map_img} href="https://maps.app.goo.gl/K1gLYSDTyJPXCH4Z6"></a>
         <div className={styles.div_contect}>
           <p className={styles.p_contect}>
             شما میتوانید در این قسمت با ما در تماس باشید
@@ -26,6 +53,10 @@ function ContectUs() {
               <input
                 className={styles.input}
                 placeholder="مثال: کوروش هخامنشی"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               ></input>
             </div>
             <div className={styles.div_input1}>
@@ -33,16 +64,30 @@ function ContectUs() {
               <input
                 className={styles.input}
                 placeholder="مثال: persian@gmail.com "
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               ></input>
             </div>
           </div>
           <div className={styles.contect2}>
             <p className={styles.p1}>پیام های خود را در اینجا بنویسید </p>
-            <textarea className={styles.input2}></textarea>
+            <textarea
+              className={styles.input2}
+              value={text}
+              onChange={(e) => {
+                setText(e.target.value);
+              }}
+            ></textarea>
           </div>
-          <button className={styles.button1}>ثبت تماس</button>
+          <button className={styles.button1}type="submit" onClick={handleSubmit}
+          
+          >
+            ثبت تماس
+          </button>
         </div>
-      </div>
+      </form>
       <div className={styles.div_base_contect2}>
         <div className={styles.div_phone}>
           <div className={styles.div_circle}>

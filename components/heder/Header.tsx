@@ -14,12 +14,6 @@ function Header() {
   
   return (
     <>
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-      </head>
       <div className={styles.glass_box}>
         <h2 className={styles.h2_1}>بگرد، انتخاب کن، لذت ببر</h2>
         <div className={styles.p_glassbox}>

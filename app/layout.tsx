@@ -18,6 +18,10 @@ const bold = localFont({
   src: "./font/iransansX family/IRANSansX-Bold.ttf",
   variable: "--bold",
 });
+const bolder = localFont({
+  src: "./font/iransansX family/IRANSansX-ExtraBold.ttf",
+  variable: "--bolder",
+});
 const small = localFont({
   src: "./font/Farsi numerals/IRANSansXFaNum-Light.ttf",
   variable: "--small",

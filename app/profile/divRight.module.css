@@ -1,0 +1,68 @@
+.base {
+  width: 85%;
+  height: 584px;
+  display: flex;
+  justify-content: center;
+  margin-top: 13vh;
+  margin-bottom: 5vh;
+  gap: 64px;
+  /* background-color: aqua; */
+}
+.div_right {
+  width: 32%;
+  height: 370px;
+  border-radius: 16px;
+  background: #f5f5f5;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+.div_information1 {
+  width: 83%;
+  height: 47px;
+  border-bottom: 0.5px solid #d4d4d4;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.div_information5 {
+  width: 83%;
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.p_div_right {
+  /* color: var(--black, #393939); */
+  text-align: right;
+  font-family: var(--medium);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 500ms, transform 500ms;
+}

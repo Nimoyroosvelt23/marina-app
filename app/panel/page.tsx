@@ -170,14 +170,8 @@ export default function page() {
                 setlogo2(ghermez)
                 setmosb2(true)
             }
-
-
             setmosb2(false)
-
         }
-
-
-
     },)
 
 
@@ -432,7 +426,9 @@ export default function page() {
                                     tileClassName={tileClassName}
                                     value={date.toDate()}
                                     locale="fa-IR"
+
                                     onChange={onChange}
+
                                 />
 
                             </div>
@@ -482,12 +478,12 @@ export default function page() {
                                     <div className='ej'>
                                         <div onClick={(e) => {
 
-                                            setinputcolor2(inputcolor2 === false ? true : false)
+                                            setinputcolor(inputcolor === false ? true : false)
 
                                             console.log(inputcolor2)
                                         }}
 
-                                             style={{backgroundColor: inputcolor2 === false ? '#07D95A' : '#E0E0E0'}}
+                                             style={{backgroundColor: inputcolor === false ? '#07D95A' : '#E0E0E0'}}
 
                                              className='inpubox'></div>
 
@@ -711,7 +707,7 @@ export default function page() {
             </div>
             <div className='darakhar'>
                 <div className='divtah'>
-                    <div><Image src={line} width='128' alt=''/>
+                    <div>
                     </div>
                     <div className='divd'>
                         <h4 className='kie'>

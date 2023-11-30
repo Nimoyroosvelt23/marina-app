@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import styless from "../home-page/style.module.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Slider from "./Slider";
+import Slider2 from "./Slider2";
 function Center() {
   const [inputValue, setInputVlaue] = useState<string>("");
   const NameWaterSports = [
@@ -122,6 +123,7 @@ function Center() {
       </div>
       <div className={styles.div_slider_2}>
         <Slider />
+        <Slider2/>
       </div>
       <div className={styles.oferr}></div>
       <div className={styles.divhr2}>

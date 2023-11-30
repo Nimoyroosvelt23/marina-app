@@ -5,13 +5,13 @@ import Image from "next/image";
 import "animate.css";
 function Header() {
   const [openRest, setOpenRest] = useState(false);
-  
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const handleSelectToggle = () => {
-      setIsOpen(!isOpen);
-    };
-  
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleSelectToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className={styles.glass_box}>
@@ -33,7 +33,7 @@ function Header() {
               width="14"
             />
           </div>
-           {/* <div className={styles.select1}>
+          {/* <div className={styles.select1}>
         <div
           className={`${styles.select} ${isOpen ? styles.open : ''}`}
           onClick={handleSelectToggle}
@@ -96,7 +96,6 @@ function Header() {
           <div className={styles.div1_bang}>تفریحات گروهی</div>
           <div className={styles.div1_bang}>کشتی های VIP</div>
           <div className={styles.div5_bang}>پارک آبی اوشن</div>
-
         </div>
         <div className={styles.header}>
           <ul className={styles.item_header}>
@@ -127,9 +126,7 @@ function Header() {
               </div>
 
               <div className={styles.div_span1_3}>
-                <li>
-                  <span className={styles.span1}>رزرو اقامتگاه</span>
-                </li>
+                <li>رزرو اقامتگاه</li>
                 <li className={styles.span1}> تماس با ما</li>
                 <li className={styles.span1}> بلاگ</li>
               </div>

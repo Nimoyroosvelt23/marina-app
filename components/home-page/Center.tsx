@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import styless from "../home-page/style.module.css";
+import styless from './style.module.css'
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Slider from "./Slider";
 import Slider2 from "./Slider2";

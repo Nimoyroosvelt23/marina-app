@@ -13,12 +13,19 @@
     "chart.js": "^4.4.0",
     "framer-motion": "^10.16.5",
     "keen-slider": "^6.8.6",
+<<<<<<< HEAD
     "moment-jalaali": "^0.10.0",
+=======
+>>>>>>> 046f742c7d5e053beff2a0a8f668e32bfe9d187f
     "next": "latest",
     "nuka-carousel": "^7.0.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
+<<<<<<< HEAD
     "react-dom": "^18.2.0",
+=======
+    "react-dom": "latest",
+>>>>>>> 046f742c7d5e053beff2a0a8f668e32bfe9d187f
     "swiper": "^11.0.5"
   },
   "devDependencies": {

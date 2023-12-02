@@ -1,13 +1,15 @@
 
 
 "use client"
-
+import {router} from "next/client";
 import {useState} from "react";
 import styles from "../code/code.module.css";
-
+import { useRouter } from 'next/navigation'
 
 
 export default function page() {
+
+    const router = useRouter()
 
     const [code,setcode] = useState<number|string>('')
 
@@ -39,6 +41,7 @@ export default function page() {
 
                   if (code !==''){
 
+                    router.push('/')
                   }
 
 

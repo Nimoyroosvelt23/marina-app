@@ -6,10 +6,11 @@ import Center from "@/components/home-page/Center";
 export default function Landing() {
   return (
     <RootLayout>
-      <div className={styles.container}>
-        
-        <Header/>
-        <Center/>
+      <div className={styles.page_wrapper}>
+        <div className={styles.container}>
+          <Header />
+          <Center />
+        </div>
       </div>
     </RootLayout>
   );

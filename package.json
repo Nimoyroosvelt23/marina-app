@@ -13,12 +13,13 @@
     "chart.js": "^4.4.0",
     "framer-motion": "^10.16.5",
     "keen-slider": "^6.8.6",
+    "moment-jalaali": "^0.10.0",
     "next": "latest",
-    "react": "latest",
+    "nuka-carousel": "^7.0.0",
+    "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "latest",
-    "react-transition-group": "^4.4.5",
-    "swiper": "^10.3.1"
+    "react-dom": "^18.2.0",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "latest",

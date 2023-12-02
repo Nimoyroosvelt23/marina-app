@@ -1,0 +1,470 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1440px;
+    height: fit-content;
+    overflow: no-content;
+}
+
+.divkol {
+
+    overflow: no-display;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: no-display;
+
+}
+
+.header {
+
+    width: 100%;
+    height: 80px;
+    /* background: rgba(255, 255, 255, 0.50); */
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.80);
+    background-blend-mode: soft-light;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img1 {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.item_header {
+    width: 94%;
+    height: 75%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.right_header {
+    width: 37%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* background-color: rgb(98, 255, 0);  */
+}
+
+.div_li_header1 {
+    width: 120px;
+    height: 24px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.li_header1 {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 500;
+    word-wrap: break-word;
+    font-family: var(--medium);
+}
+
+.div_span1_3 {
+    width: 45%;
+    height: 21px;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--regular);
+    font-size: 14px;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: #222222;
+    /* background-color: aqua; */
+}
+
+.span1_3 {
+}
+
+.span1 {
+    background-color: inherit;
+}
+
+.left_header {
+    width: 7.7%;
+    height: 50%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    z-index: 2;
+    color: #393939;
+    font-size: 40px;
+    font-family: var(--bold);
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-top: 2.8%;
+}
+
+.h2 {
+    z-index: 2;
+    color: #393939;
+    font-size: 18px;
+    font-family: var(--medium);
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-top: -1.3%;
+}
+
+.nonheader {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.bala {
+    gap: 25px;
+    padding: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+}
+
+.taknafare {
+    font-family: var(--bolder);
+    font-size: 24px;
+    direction: rtl;
+    color: var(--black, #393939);
+    text-align: right;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    width: fit-content;
+    height: 40px;
+}
+
+.bbbody {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.bala2 {
+    margin-top: -90px;
+    padding-top: 24px;
+    padding-left: 64px;
+    padding-right: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.nevshte {
+    margin-bottom: 200px;
+    overflow: visible;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.taknafare2 {
+    color: var(--black, #393939);
+    text-align: right;
+    /* body/SM */
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    font-family: var(--medium);
+}
+
+.bill {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    border-radius: 24px;
+    background: #F5F5F5;
+    width: 480px;
+    height: 706px;
+    flex-shrink: 0;
+}
+
+.divbill1 {
+    height: 160px;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.axghaygh {
+    border-radius: 16px;
+    width: 416px;
+    height: 88px;
+
+}
+
+.divbill2 {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pedaldiv {
+    color: var(--black, #393939);
+    text-align: right;
+
+    font-family: var(--bolder);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.bibipedal {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.divbill3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 24px;
+
+}
+
+.ptype {
+    color: var(--black, #393939);
+    text-align: right;
+
+    /* body/SM */
+    font-family: var(--medium);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.divpen {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 65px;
+}
+
+.mmasir {
+    color: var(--taritary-secondary-04, #001C59);
+    text-align: right;
+    font-family: Dana-FaNum;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.linkkk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.bill4 {
+    width: 90%;
+    height: 40px;
+
+    border-bottom-color: #787878;
+    border-bottom-style: dashed;
+}
+
+.bill5 {
+    width: 90%;
+    height: 100px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.eykdovom {
+    height: 100%;
+    width: 50%;
+    gap: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dodovom {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+
+.dodovom2 {
+    gap: 20px;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.coderezerv {
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--bold);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.copydiv {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pcopyy {
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--small);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bill6{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.avfishe{
+    width: 390px;
+    height: 88px;
+    flex-shrink: 0;
+}
+.coderezerv22{
+    color: var(--black, #393939);
+    text-align: right;
+    font-family: var(--small);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tomandiv{
+    color: var(--black, #393939);
+    font-family:var(--small);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+.didivvvvtomani{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+     gap: 90px;
+}
+.divpainnnnn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 480px;
+    height: 50px;
+  gap: 230px;
+}
+.divchaap{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.mmasir2{
+    color: var(--taritary-secondary-04, #001C59);
+    font-family: var(--medium);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}

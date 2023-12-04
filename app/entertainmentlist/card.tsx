@@ -6,9 +6,9 @@ import paro from '../image/paddle-board-01 1.png';
 import jetski from '../image/jeski.png';
 import ballon from '../image/ballon.png';
 import Image from "next/image";
-import './card.css'
-import {imageExtMimeTypeMap} from "next/dist/lib/mime-type";
 
+import './card.css'
+import {router} from "next/client";
 export default function Card() {
 
 const router = useRouter()

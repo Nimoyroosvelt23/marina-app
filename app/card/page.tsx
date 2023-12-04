@@ -23,17 +23,18 @@ import man from '../image/man.png'
 import anrufen from '../image/telephone.png'
 import zarin from '../image/zarinpars.png'
 import up from '../image/up.png'
+
 import melat from '../image/melt.png'
 import parsian from '../image/parsian.png'
 
-
-import icon from '../image/icon.png';
 import Image from "next/image";
 import NUka from "./nuka";
 import HederBlog from '../blog/hederblog';
 
 
 export default function page() {
+
+    const router = useRouter()
 
     const [counter, setcounter] = useState<number>(0)
     const [box, setbox] = useState<boolean>(false)
@@ -323,7 +324,21 @@ export default function page() {
                             <div className='tabel3'>
 
 
-                                <button className='tabelbuuton'>
+                                <button className='tabelbuuton' onClick={()=>{
+
+
+                                      if (counter >0){
+                                          
+                                          router.push('/bill')
+
+                                      }
+
+
+
+
+
+
+                                }}>
 
 
                                     <p className='ppardakht'>

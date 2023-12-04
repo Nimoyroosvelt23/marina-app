@@ -125,7 +125,7 @@ function Slider1() {
                                 <button onClick={() => {
 
 
-                                    router.push('/panel')
+                                    router.push('/')
 
 
                                 }} className='buttabi'>

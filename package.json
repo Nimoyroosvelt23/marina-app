@@ -24,6 +24,7 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@types/moment-jalaali": "^0.7.9",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",

@@ -8,7 +8,6 @@ import ballon from '../image/ballon.png';
 import Image from "next/image";
 
 import './card.css'
-import {router} from "next/client";
 export default function Card() {
 
 const router = useRouter()

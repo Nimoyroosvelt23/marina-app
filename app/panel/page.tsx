@@ -1,6 +1,7 @@
 "use client"
 import Calendar from 'react-calendar';
 import { useRouter } from 'next/navigation'
+
 import ballon from '../image/p.png';
 import ballonab from '../image/p2.png';
 import star from '../image/setar.png';
@@ -41,95 +42,18 @@ import HederBlog from '../blog/hederblog';
 
 
 
+interface cardcoment {
+    date:  any,
+    name: string,
+    lastname: string,
+    matn: string,
+    email: string,
+}
 
 
 export default function page() {
 
-    const router = useRouter()
-
-    const onChange = (newDate) => {
-        setDate(moment(newDate));
-    }
-
-    const isToday = (date) => {
-        return moment(date).isSame(moment(), 'day');
-    }
-
-    const tileClassName = ({ date }) => {
-        return isToday(date) ? 'today' : '';
-    }
-
-
-
-    const [cardcom, setcordcom] = useState([{
-        name: 'محمد',
-        lastname: 'علوی',
-        date:('1400-01-03', 'jYYYY-jMM-jDD'),
-
-        matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
-    },
-        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
-        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
-
-        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
-
-        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
-        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
-
-        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
-
-
-        {
-            name: 'محمد',
-            lastname: 'علوی',
-            matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
-        },
-        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
-        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
-
-        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
-
-        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
-        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
-
-        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
-        {
-            name: 'محمد',
-            lastname: 'علوی',
-            matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
-        },
-        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
-        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
-
-
-
-        {
-
-            name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . ',
-
-            date:('1400-01-03', 'jYYYY-jMM-jDD'),
-        },
-        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn:'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
-
-
-    ]);
-
-    interface cardcoment {
-        date:  any,
-        name: string,
-        lastname: string,
-        matn: string,
-        email: string,
-    }
-
     const [date, setDate] = useState<Moment>(moment());
-
-
-    console.log('k',date)
     const [sabtnazar, setsabtnazar] = useState(false)
     const [like, setlike] = useState(false)
     const [save, setsave] = useState(false)
@@ -145,38 +69,68 @@ export default function page() {
     const [logo2, setlogo2] = useState('')
     const [mosb, setmosb] = useState<boolean>(false)
     const [mosb2, setmosb2] = useState(false)
+    const router = useRouter()
 
-    useEffect(() => {
+    const onChange = (newDate) => {
+        setDate(moment(newDate));
+    }
 
+    const isToday = (date) => {
+        return moment(date).isSame(moment(), 'day');
+    }
 
-        if (mosb === true) {
-            setlogo(gold)
-            setmosb(true)
-        } else if (mosb === false) {
-            setlogo(mosbat)
+    const tileClassName = ({ date }) => {
+        return isToday(date) ? 'today' : '';
+    }
 
-        }
+    const [cardcom, setcordcom] = useState([{
+        name: 'محمد',
+        lastname: 'علوی',
+        date:('1400-01-03', 'jYYYY-jMM-jDD'),
+        matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
+    },
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
 
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
 
-        setmosb(false)
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
 
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+        {
+            name: 'محمد',
+            lastname: 'علوی',
+            matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
+        },
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
 
-    },)
-    useEffect(() => {
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
+
+        {name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . '},
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn: 'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+        {
+            name: 'محمد',
+            lastname: 'علوی',
+            matn: 'عالی بود. برای من تجربه هیجان انگیزی بود. به شدت توصیه می کنم و حتما در سفر های بعدی دوباره رزرو خواهم کرد. '
+        },
+        {name: 'سید محمد هاشمی', lastname: 'علوی', matn: 'عالی بود. رفتم کیش ۱۲۰۰دلار خرج کردم. '},
+        {name: 'امیر حسین الوی', lastname: 'علوی', matn: 'رفتم کیش خونه فامیلمون بابام پول نداد. '},
         {
 
-            if (mosb2 === false) {
-                setlogo2(zarb)
-                setmosb2(false)
+            name: 'علی جکوری', lastname: 'علوی', matn: 'من نو کیش کار پیدا کردم تو اسنپ . ',
 
-            } else if (mosb2 === true) {
-                setlogo2(ghermez)
-                setmosb2(true)
-            }
-            setmosb2(false)
-        }
-    },)
-
+            date:('1400-01-03', 'jYYYY-jMM-jDD'),
+        },
+        {name: 'حسین شابدول ازیمی', lastname: 'علوی', matn:'عالی بود فقط چلوکباباش گرون بود شابدو لزیم سخی ۲۰ تونه. '},
+    ]);
 
     const emmmail = (e: React.ChangeEvent<HTMLInputElement>) => {
         const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -428,7 +382,6 @@ export default function page() {
 
                                     <div className='ej'>
                                         <div onClick={(e) => {
-
                                             setinputcolor(inputcolor === false ? true : false)
 
                                             console.log(inputcolor2)

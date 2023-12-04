@@ -31,7 +31,7 @@ import Image from "next/image";
 import NUka from "./nuka";
 import HederBlog from '../blog/hederblog';
 
-
+ 
 export default function page() {
 
     const router = useRouter()

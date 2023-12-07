@@ -1,16 +1,16 @@
 "use client"
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react';
 import vaking from '../image/wake-boarding 1.png';
 import paro from '../image/paddle-board-01 1.png';
 import jetski from '../image/jeski.png';
 import ballon from '../image/ballon.png';
 import Image from "next/image";
+
 import './card.css'
-import {imageExtMimeTypeMap} from "next/dist/lib/mime-type";
-
-
 export default function Card() {
 
+const router = useRouter()
 
     const card = [{name: 'ویک بوردینگ', ax: <Image className='ax' src={vaking}  width='301' height='200' alt=''/>},
         {name: 'پدل بورد', ax: <Image className='ax' src={paro} width='301' height='200' alt=''/>},
@@ -50,7 +50,16 @@ export default function Card() {
                     </p>
                     <p className='toman'>تومان</p>
                 </div>
-                <button className='buttabi'>
+                <button onClick={()=>{
+                    
+    
+
+                        router.push('/panel')
+                   
+    
+                          
+
+                }} className='buttabi'>
                     <p className='afzodan'>
                         افزودن به سبد خرید
                     </p>

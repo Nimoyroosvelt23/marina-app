@@ -11,6 +11,8 @@ import Transaction from "./transaction";
 import Question from "./question";
 import styles from "../blog/blog.module.css";
 import styless from "./divRight.module.css";
+import stylesss from "/app/page.module.css";
+import Footer from "@/components/home-page/footer";
 
 export default function Landing({}) {
   const [selectedComponent, setSelectedComponent] = useState("profile");
@@ -25,7 +27,7 @@ export default function Landing({}) {
   };
   console.log(selectedIcon);
   return (
-    <div className={styles.page_wrapper}>
+    <div className={stylesss.page_wrapper}>
       <div className={styles.container}>
         <Header />
         <div className={styless.base}>
@@ -163,6 +165,7 @@ export default function Landing({}) {
           {selectedComponent === "transaction" && <Transaction />}
           {selectedComponent === "question" && <Question />}
         </div>
+      <Footer/>
       </div>
     </div>
   );

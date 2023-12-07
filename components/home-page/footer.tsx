@@ -55,9 +55,9 @@ function footer() {
         </div>
 
         <div className={styles.rast}>
-          <Image alt="hhhhhh" src={ngo} width="54" height="46" />
-          <Image alt="hhhhhh" src={ngo2} width="30" height="44" />
           <Image alt="hhhhhh" src={ngo3} width="46" height="42" />
+          <Image alt="hhhhhh" src={ngo2} width="30" height="44" />
+          <Image alt="hhhhhh" src={ngo} width="54" height="46" />
           <Image alt="hhhhhh" src={insta} width="20" height="20" />
           <Image alt="hhhhhh" src={facebook} width="20" height="20" />
           <Image alt="hhhhhh" src={t} width="20" height="20" />

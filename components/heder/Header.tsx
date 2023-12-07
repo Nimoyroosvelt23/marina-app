@@ -33,27 +33,6 @@ function Header() {
               width="14"
             />
           </div>
-          {/* <div className={styles.select1}>
-        <div
-          className={`${styles.select} ${isOpen ? styles.open : ''}`}
-          onClick={handleSelectToggle}
-        >
-          <span>Select an option
-          <Image
-              src={"/icon/Polygon 8.svg"}
-              alt="GFG logo served with static path of public directory"
-              height="14"
-              width="14"
-            />
-          </span>
-          <div className={styles.options}>
-            <div className={styles.option}>Option 1</div>
-            <div className={styles.option}>Option 2</div>
-            <div className={styles.option}>Option 3</div>
-            <div className={styles.option}>Option 4</div>
-          </div>
-        </div>
-      </div> */}
           <div className={styles.select1}>
             <div className={styles.p1}> 4 نفر</div>
             <Image
@@ -90,7 +69,9 @@ function Header() {
               : { transform: "scaleY(0)" }
           }
         >
-          <p className={styles.p1_bang}>تفریحات دریایی</p>
+          <div className={styles.div_bang0}>
+            <p className={styles.p1_bang}>تفریحات دریایی</p>
+          </div>
           <div className={styles.div1_bang}>تفریحات تک نفره</div>
           <div className={styles.div1_bang}>تفریحات دو نفره</div>
           <div className={styles.div1_bang}>تفریحات گروهی</div>

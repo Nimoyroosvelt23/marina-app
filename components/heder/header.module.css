@@ -1,4 +1,3 @@
-
 .header {
   width: 100%;
   height: 80px;
@@ -67,7 +66,7 @@
   align-items: center;
   /* background-color: aqua; */
 }
-.bang{
+.bang {
   height: 305px;
   width: 220px;
   display: flex;
@@ -75,59 +74,62 @@
   justify-content: center;
   align-items: center;
   /* gap: 12px; */
- position: absolute;
- z-index: 1;
- right: 6vw;
- top: 1.6vw;
- border-radius: 16px;
-background: #F7F7F7;
-box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
-transform-origin: top;
-transition: all 0.3s linear;
+  position: absolute;
+  z-index: 1;
+  right: 6vw;
+  top: 1.6vw;
+  border-radius: 16px;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
+  transform-origin: top;
+  transition: all 0.3s linear;
 }
-.p1_bang{
-  color: var(--primary, #DD9800);
-text-align: right;
-font-family: var(--medium);
-font-size: 18px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-display: flex;
-justify-content: right;
-align-items: flex-start;
+/* .div_bang0{
+
+} */
+.p1_bang {
+  color: var(--primary, #dd9800);
+  text-align: right;
+  font-family: var(--medium);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
 }
-.div1_bang{
+.div1_bang {
   width: fit-content;
   width: 110px;
   height: 30px;
   border-bottom: 0.1px solid #787878;
   color: var(--black, #393939);
-text-align: right;
-font-family: var(--medium);
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top: 1vw;
-display: flex;
-justify-content: right;
-align-items: flex-start;
+  text-align: right;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
 }
-.div5_bang{
+.div5_bang {
   width: fit-content;
   height: 30px;
   color: var(--black, #393939);
-text-align: right;
-font-family: var(--medium);
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top: 1vw;
-display: flex;
-justify-content: right;
-margin-left: 1vw;
+  text-align: right;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: right;
+  margin-left: 1vw;
 }
 
 .li_header1 {
@@ -247,7 +249,6 @@ margin-left: 1vw;
   justify-content: space-around;
   align-items: center;
   margin-top: 22px;
-  
 }
 .select1 {
   width: 144px;
@@ -287,7 +288,6 @@ margin-left: 1vw;
   justify-content: space-around;
   align-items: center;
 }
-
 
 .select {
   position: relative;

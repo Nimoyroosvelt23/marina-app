@@ -58,6 +58,7 @@ function Center() {
         <span className={styles.point2}></span>
         <div className={styles.hr2}></div>
       </div>
+
       <div className={styles.div_imgs}>
         <div className={styles.div_right_img}>
           <div className={styles.img1}></div>
@@ -66,8 +67,11 @@ function Center() {
             <div className={styles.img3}></div>
           </div>
         </div>
-        <div className={styles.img4}></div>
+        <div className={styles.divleft_img}>
+          <div className={styles.img4}></div>
+        </div>
       </div>
+
       <div className={styless.div_slider}>
         <Swiper
           spaceBetween={30}
@@ -386,7 +390,7 @@ function Center() {
           </div>
         </div>
       </div>
-     <Footer/>
+      <Footer />
     </>
   );
 }

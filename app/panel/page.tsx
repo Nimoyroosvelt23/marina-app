@@ -413,21 +413,20 @@ export default function page() {
                                                                  alt=''/><p className='rezerv'>رزرو</p></button>
                         </div>
                         <div className='moshahede'>
-                            <Image onClick={(event) => {
 
-                                {
-                                    setmosb(true)
-                                    setnumer(number + 1)
+                            <svg className='mosbat' onClick={()=>{
 
-                                }
+                                setmosb(true)
+                                setnumer(number + 1)
 
-                            }
 
-                            } width='32' height='32' src={logo} className='mosbat'
-                                   alt=''/>
+                            }} xmlns="http://www.w3.org/2000/svg" width="29" height="32" viewBox="0 0 29 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16ZM16 23.6667C15.4477 23.6667 15 23.219 15 22.6667V17H9.33333C8.78105 17 8.33333 16.5523 8.33333 16C8.33333 15.4477 8.78105 15 9.33333 15H15V9.33333C15 8.78105 15.4477 8.33333 16 8.33333C16.5523 8.33333 17 8.78105 17 9.33333V15H22.6667C23.219 15 23.6667 15.4477 23.6667 16C23.6667 16.5523 23.219 17 22.6667 17H17V22.6667C17 23.219 16.5523 23.6667 16 23.6667Z" fill="#333333"/>
+                            </svg>
+
 
                             <p className='pnumber'>{number}</p>
-                            <Image onClick={(event) => {
+                            <svg  onClick={()=>{
                                 setmosb2(true)
 
                                 if (number < 0) {
@@ -439,8 +438,13 @@ export default function page() {
 
                                 }
 
-                            }} width='32' height='32' src={logo2}
-                                   alt=''/>
+
+                            }} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="11.4" stroke="#333333" stroke-width="1.2"/>
+                                <path d="M21.3333 10.667L10.6666 21.3337" stroke="#333333" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6667 10.667L21.3334 21.3337" stroke="#333333" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
                             <Link href='/' className='moshahedesabad'>مشاهده سبد خرید</Link>
                         </div>
                     </div>

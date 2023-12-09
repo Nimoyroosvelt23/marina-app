@@ -1377,3 +1377,8 @@ display: flex;
     flex-shrink: 0;
 
 }
+
+
+.mosbat:after{
+     color: #e6ff00;
+}

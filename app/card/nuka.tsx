@@ -88,7 +88,7 @@ function Slider1() {
 
             <Carousel
                 slidesToScroll={1}
-                slidesToShow={4}
+                slidesToShow={3}
                 scrollMode="remainder"
                 cellSpacing={10}
                 disableEdgeSwiping={false}

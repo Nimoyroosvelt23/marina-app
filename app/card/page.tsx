@@ -48,18 +48,13 @@ export default function page() {
             <div className='nonheader'>
                 <div className='bala'>
 
-                    <Image src={line} width='128' alt=''/>
+                    <Image src={line} className='oinpin' width='128' alt=''/>
 
 
                     <p className='taknafare'>سبد خرید</p>
 
                 </div>
-
-
                 <div className="nevshte">
-                    <div className='avall'>
-
-                    </div>
 
                     <div className='links'>
 

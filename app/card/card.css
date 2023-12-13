@@ -164,7 +164,8 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-
+     margin: 0;
+    padding: 0;
 }
 
 
@@ -280,6 +281,7 @@ body {
     justify-content: flex-start;
     gap: 16px;
     flex-direction: column;
+
 
 
 }
@@ -1062,29 +1064,30 @@ span {
     }
     .bala {
         gap: 25px;
-
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         height: 40px;
-        width: 100%;
+        width: 138%;
     }
 
 
     .nevshte {
         overflow: visible;
-        height: fit-content;
+        height: auto;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 
     .links {
+          margin-right: 100px;
         gap: 24px;
-          
         height: 50%;
         width: 100%;
         display: flex;
@@ -1093,15 +1096,210 @@ span {
         flex-direction: column;
     }
     .recht {
+        margin-top: 100px;
+        height: 30%;
+        width: 151%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: row;
 
-        height: 50%;
-        width: 100%;
+
+    }
+    .bablon{
+
+    }
+
+    .oinpin{
+        display: none;
+
+    }
+    .avallinks {
+        gap: 7px;
+        width: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 302px;
+    }
+    .divtakhfif {
+        border-radius: 8px;
+        background: #F5F5F5;
+        width: 151%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .divtakhfif2 {
+        border-radius: 8px;
+        background: #F5F5F5;
+        width: 151%;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .takhfif2 {
+        width: 95%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 150px;
+    }
+    .divtakhfif3 {
+        border-radius: 8px;
+        background: #F5F5F5;
+        width: 151%;
+        height: 209px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 16px;
         flex-direction: column;
+    }
+
+    .downtakhfif3 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 122px;
+        gap: 94px;
+        width: 95%;
+    }
+.santakhar{
+    display: none;
+}
+.slider-frame{
+    overflow: hidden;
+    width: 110%;
+    position: relative;
+    outline: none;
+    touch-action: pan-y;
+    height: auto;
+    transition: height 300ms ease-in-out;
+    will-change: height;
+    user-select: none;
+}
 
 
+
+
+}
+@media only screen and (max-width:390px )  {
+    body {
+        padding: 0;
+        margin: 0;
+        max-width: 390px;
+        height: fit-content;
+        overflow: no-display;
+    }
+    .divkol {
+        overflow: no-display;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow: no-display;
+    }
+
+    .nonheader {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nonheader {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bala {
+        gap: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 40px;
+        width: 178%;
+    }
+
+    .nevshte {
+        overflow: visible;
+        height: auto;
+        width: 159%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .divtakhfif2 {
+        border-radius: 8px;
+        background: #F5F5F5;
+        width: 173%;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .bablon {
+        flex-shrink: 0;
+        border-radius: 8px;
+        width: 400px;
+        height: 232px;
+    }
+    .takhfif2 {
+        width: 95%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 45px;
+    }
+    .divtakhfif {
+        border-radius: 8px;
+        background: #F5F5F5;
+        width: 172%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .divtakhfif3 {
+        border-radius: 8px;
+        background: #F5F5F5;
+        width: 174%;
+        height: 209px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .downtakhfif3 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 122px;
+        gap: 44px;
+        width: 95%;
     }
 }

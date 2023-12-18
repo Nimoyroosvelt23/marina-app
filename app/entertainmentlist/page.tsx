@@ -19,7 +19,6 @@ import icon from '../image/icon.png';
 import Image from "next/image";
 import Card from "./card";
 import vaking from "../image/wake-boarding 1.png";
-import Center from "@/components/home-page/Center";
 import HederBlog from "../blog/hederblog";
 
 export default function page() {
@@ -78,7 +77,7 @@ export default function page() {
                     </div>
                 </div>
             </div>
-               <Center/>
+
         </div>
     );
 }

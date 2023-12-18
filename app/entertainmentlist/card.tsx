@@ -51,14 +51,7 @@ const router = useRouter()
                     <p className='toman'>تومان</p>
                 </div>
                 <button onClick={()=>{
-                    
-    
-
                         router.push('/panel')
-                   
-    
-                          
-
                 }} className='buttabi'>
                     <p className='afzodan'>
                         افزودن به سبد خرید

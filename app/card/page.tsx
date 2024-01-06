@@ -123,7 +123,9 @@ export default function page() {
                                         onClick={(event) => {
 
                                             if (counter > 0) {
+
                                                 setcounter(counter - 1)
+
                                             }
                                         }
                                         }
@@ -327,10 +329,6 @@ export default function page() {
                                           router.push('/bill')
 
                                       }
-
-
-
-
 
 
                                 }}>

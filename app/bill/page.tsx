@@ -7,62 +7,13 @@ import ghaygh from  '../image/ghaygh.png'
 import fishe from  '../image/barcodepng.parspng 1.png';
 
 import Image from "next/image";
+import HederBlog from "../blog/hederblog";
 
 export default function page() {
 
     return (
         <div className="divkol">
-            <div className='header'>
-                <ul className='item_header'>
-                    <div className='right_header'>
-                        <li>
-                            {" "}
-                            <Image
-                                src={"/icon/logo-kish-enjoy 1.svg"}
-                                alt="GFG logo served with static path of public directory"
-                                height="52"
-                                width="87"
-                            />
-                        </li>
-                        <div className='div_li_header1'>
-                            <li className='li_header1'>تفریحات دریایی</li>
-                            <Image
-                                src={"/icon/Expand_down.svg"}
-                                alt="GFG logo served with static path of public directory"
-                                height="24"
-                                width="24"
-                            />
-                        </div>
-                        <div className='div_span1_3'>
-                            <li>
-                                <span className='span1'>رزرو اقامتگاه</span>
-                            </li>
-                            <li className='span1'> تماس با ما</li>
-                            <li className='span1'> بلاگ</li>
-                        </div>
-                    </div>
-                    <div className='left_header'>
-                        <Image
-                            src={"/icon/Search.svg"}
-                            alt="GFG logo served with static path of public directory"
-                            height="24"
-                            width="24"
-                        />
-                        <Image
-                            src={"/icon/File_dock.svg"}
-                            alt="GFG logo served with static path of public directory"
-                            height="24"
-                            width="24"
-                        />
-                        <Image
-                            src={"/icon/User_alt_light.svg"}
-                            alt="GFG logo served with static path of public directory"
-                            height="24"
-                            width="24"
-                        />
-                    </div>
-                </ul>
-            </div>
+            <HederBlog/>
             <div className='nonheader'>
                 <div className='bala'>
                     <Image src={line} width='128' alt=''/>

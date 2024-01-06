@@ -27,7 +27,6 @@ function ContectUs() {
     setEmail("");
     setText(""); 
   }
-
   console.log(allData);
   return (
     <>

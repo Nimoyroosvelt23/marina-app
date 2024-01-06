@@ -14,7 +14,19 @@ import Slider from "./Slider";
 import Slider2 from "./Slider2";
 import Footer from "./footer";
 function Center() {
-  const [inputValue, setInputVlaue] = useState<string>("");
+  const [inputValue, setInputValue] = useState<string>("");
+  const [allData1, setAllData1] = useState<Array<{ inputValue: string }>>([]);
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    let inputData = {
+      inputValue,
+    };
+    let copy = [...allData1, inputData];
+    setAllData1(copy);
+    setInputValue("");
+  };
+
   const NameWaterSports = [
     {
       img: "/icon/Group1.svg",
@@ -121,10 +133,22 @@ function Center() {
         </Swiper>
       </div>
       <div className={styles.divhr2}>
-        <Image src={"/icon/Line 27.svg"} alt="item" width={360} height={360} />
+        <Image
+          className={styles.khat}
+          src={"/icon/Line 27.svg"}
+          alt="item"
+          width={360}
+          height={360}
+        />
 
         <p className={styles.phr2}>هیجان رو تجربه کن!</p>
-        <Image src={"/icon/Line 26.svg"} alt="item" width={360} height={360} />
+        <Image
+          className={styles.khat}
+          src={"/icon/Line 26.svg"}
+          alt="item"
+          width={360}
+          height={360}
+        />
       </div>
       <div className={styles.div_slider_2}>
         <Slider />
@@ -132,10 +156,22 @@ function Center() {
       </div>
       <div className={styles.oferr}></div>
       <div className={styles.divhr2}>
-        <Image src={"/icon/Line 27.svg"} alt="item" width={360} height={160} />
+        <Image
+          className={styles.khat}
+          src={"/icon/Line 27.svg"}
+          alt="item"
+          width={360}
+          height={160}
+        />
 
         <p className={styles.phr2}>منتظر چی هستی؟</p>
-        <Image src={"/icon/Line 26.svg"} alt="item" width={360} height={160} />
+        <Image
+          className={styles.khat}
+          src={"/icon/Line 26.svg"}
+          alt="item"
+          width={360}
+          height={160}
+        />
       </div>
       <p className={styles.p_news}>
         از آخرین خبرهای ما درباره تفریحات مورد نظرت باخبر شو!
@@ -311,16 +347,18 @@ function Center() {
           type="text"
           value={inputValue}
           onChange={(e) => {
-            setInputVlaue(e.target.value);
+            setInputValue(e.target.value);
           }}
         />
-        <Image
-          style={{ marginLeft: "24px" }}
-          src="/icon/send.svg"
-          alt=""
-          width={32}
-          height={32}
-        />
+        <div onClick={handleSubmit}>
+          <Image
+            style={{ marginLeft: "24px" }}
+            src="/icon/send.svg"
+            alt=""
+            width={32}
+            height={32}
+          />
+        </div>
       </div>
       <div className={styles.div_base_question}>
         <div className={styles.divhr5}>

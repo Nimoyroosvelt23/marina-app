@@ -8,9 +8,11 @@
 
 .container {
   width: 1440px;
+  width: 100%;
   height: fit-content;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }

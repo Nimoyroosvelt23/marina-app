@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import "animate.css";
 function Header() {
   const [openRest, setOpenRest] = useState(false);
@@ -71,6 +72,13 @@ function Header() {
         >
           <div className={styles.div_bang0}>
             <p className={styles.p1_bang}>تفریحات دریایی</p>
+            <Image
+            className={styles.icon_bang1}
+                  src={"/icon/Expand_down.svg"}
+                  alt="GFG logo served with static path of public directory"
+                  height="24"
+                  width="24"
+                />
           </div>
           <div className={styles.div1_bang}>تفریحات تک نفره</div>
           <div className={styles.div1_bang}>تفریحات دو نفره</div>
@@ -108,8 +116,12 @@ function Header() {
 
               <div className={styles.div_span1_3}>
                 <li>رزرو اقامتگاه</li>
-                <li className={styles.span1}> تماس با ما</li>
+              <Link style={{textDecoration:'none' , color:'#222222'}} href="/contact">
+                <li> تماس با ما</li>
+              </Link>
+                <Link style={{textDecoration:'none' , color:'#222222'}}  href="/blog">
                 <li className={styles.span1}> بلاگ</li>
+                </Link>
               </div>
             </div>
             <div className={styles.left_header}>

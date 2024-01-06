@@ -19,6 +19,8 @@ export default function Slider() {
       perView: 3,
       spacing: 15,
     },
+    
+    
   });
 
   return (

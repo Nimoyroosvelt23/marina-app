@@ -27,8 +27,6 @@ function ContectUs() {
     setEmail("");
     setText(""); 
   }
-
-  console.log(allData);
   return (
     <>
       <div className={styles.base_hr}>

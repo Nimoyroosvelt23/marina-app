@@ -20,6 +20,10 @@ body {
   border-radius: 100%;
   top: 650px !important;
   left: 64px !important;
+  @media screen and (max-width: 780px) {
+    top: 660px !important;
+    left: 54px !important;
+  }
 }
 .swiper-button-prev::after {
   color: white;
@@ -38,6 +42,10 @@ body {
   /* margin-top: 550px; */
   top: 650px !important;
   right: 64px !important;
+  @media screen and (max-width: 780px) {
+    top: 660px !important;
+    right: 54px !important;
+  }
 }
 h1,
 h2,
@@ -49,3 +57,10 @@ p {
   padding: unset;
   margin: unset;
 }
+li,
+ul,
+Link
+{
+  text-decoration: none;
+}
+

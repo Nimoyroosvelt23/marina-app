@@ -5,6 +5,20 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 95px;
+  @media screen and (max-width: 780px) {
+    height: 608px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 608px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: red;
+  }
 }
 
 .water_sports:hover {
@@ -25,6 +39,14 @@
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
   pointer-events: none;
+  @media screen and (max-width: 780px) {
+    width: 48%;
+    height: 48%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 48%;
+    height: 49%;
+  }
 }
 .water1_sports:hover .water_sports {
   pointer-events: auto;
@@ -70,7 +92,7 @@
   /* background-color: bisque; */
 }
 .hr {
-  width: 226px;
+  width: 20%;
   height: 0px;
   border-top: 2px solid #393939;
   border-left: 0px;
@@ -94,9 +116,12 @@
   font-weight: bolder;
   line-height: normal;
   margin-right: 26px;
+  @media screen and (max-width: 780px) {
+    font-size: 14px;
+  }
 }
 .hr2 {
-  width: 228px;
+  width: 20%;
   height: 0px;
   border-top: 2px solid #393939;
   border-left: 0px;
@@ -111,9 +136,8 @@
   margin-right: 25px;
 }
 .div_imgs {
-  width: 1041px;
+  width: 71%;
   height: 761.707px;
-  background-color: aqua;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,23 +151,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* justify-content: center; */
+  /* justify-content: space-between; */
   /* align-items: center; */
-  /* background-color: red; */
 }
-.div_down_img {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 18px;
-
-  /* background-color: aqua; */
+.div_right_img:hover {
+  height: 85%;
+  gap: 90px;
 }
 .img1 {
-  width: 512px;
+  width: 99%;
   height: 412px;
   background-image: url("/icon/pexels-engin-akyurt-10364376 1.png");
   background-repeat: no-repeat;
@@ -153,11 +169,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: ease-in-out 0.5s;
 }
-.img1:hover {
-  width: 700px;
-  height: 500px;
-  transition: width 0.3s ease; /* Add a smooth transition effect */
+
+.div_down_img {
+  width: fit-content;
+  height: 234px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 18px;
 }
 
 .img2 {
@@ -168,12 +190,7 @@
   background-size: cover;
   border-radius: 19.043px;
   box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
-}
-
-.div_right_img > .img1:hover .img2 {
-  height: 170px;
-  width: 450px !important;
-  background-color: red;
+  transition: ease-in-out 0.5s;
 }
 
 .img3 {
@@ -184,6 +201,35 @@
   background-size: cover;
   border-radius: 19.043px;
   box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
+}
+
+.img1:hover {
+  transform-origin: right top;
+  transform: scaleX(1.3) scaleY(1.2);
+  transition: ease-in-out 0.5s;
+}
+.img1:hover + .div_down_img .img2 {
+  /* transform: scaleX(1.3) scaleY(1.1); */
+  transform-origin: left;
+  transition: ease-in-out 0.5s;
+  width: 450px;
+  height: 200px;
+  background-position: center;
+}
+.img1:hover + .div_down_img .img3 {
+  /* transform: scaleX(1.3) scaleY(1.1); */
+  transition: ease-in-out 0.5s;
+  width: 200px;
+  height: 200px;
+}
+.img1:hover + .divleft_img .img4 {
+  /* transform: scaleX(1.3) scaleY(1.1); */
+  transition: ease-in-out 0.5s;
+  width: 190px;
+  height: 666px;
+}
+.divleft_img {
+  display: flex;
 }
 .img4 {
   width: 336px;
@@ -209,6 +255,11 @@
   gap: 10px;
   /* background-color: bisque; */
 }
+@media screen and (max-width: 780px) {
+  .khat {
+    width: 25%;
+  }
+}
 .phr2 {
   color: #393939;
   text-align: center;
@@ -217,6 +268,9 @@
   font-weight: 900;
   font-style: normal;
   line-height: normal;
+  @media screen and (max-width: 780px) {
+    font-size: 16px;
+  }
 }
 .div_slider_2 {
   width: 100%;
@@ -236,30 +290,11 @@
   background-image: url("/icon/banner.svg");
   background-repeat: no-repeat;
   box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
-  position: relative;
-}
-.p1_oferr {
-  position: absolute;
-  top: 5%;
-  right: 1.5%;
-  color: var(--black, #393939);
-  text-align: right;
-  font-family: var(--medium);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.div_bottun_oferr {
-  width: 200px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: 5%;
-  right: 1%;
+  @media screen and (max-width: 780px) {
+    background-size: cover;
+    width: 91%;
+    height: 300px;
+  }
 }
 .p_news {
   color: var(--black, #393939);
@@ -308,6 +343,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    width: 140px;
+    height: 252px;
+  }
 }
 .img1_news .qwe {
   display: none;
@@ -340,6 +379,10 @@
   background-image: url("/icon/what-is-parasailing\ 1.svg");
   margin-bottom: 65px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 780px) {
+    width: 140px;
+    height: 252px;
+  }
 }
 .img2_news .qwe {
   display: none;
@@ -373,6 +416,10 @@
   background-image: url("/icon/kish-8\ 1.svg");
   margin-top: 65px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 780px) {
+    width: 140px;
+    height: 252px;
+  }
 }
 .img3_news .qwe {
   display: none;
@@ -406,6 +453,10 @@
   background-image: url("/icon/pexels-maël-balland-3098970\ 1.svg");
   margin-bottom: 65px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 780px) {
+    width: 140px;
+    height: 252px;
+  }
 }
 .img4_news .qwe {
   display: none;
@@ -439,6 +490,10 @@
   background-image: url("/icon/055.png");
   margin-top: 65px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 780px) {
+    width: 140px;
+    height: 252px;
+  }
 }
 .img5_news .qwe {
   display: none;
@@ -481,7 +536,7 @@
   margin-top: 20px;
 }
 .div_information_marina {
-  width: 1313px;
+  width: 91%;
   height: 788px;
   flex-shrink: 0;
   margin-bottom: 90px;
@@ -489,6 +544,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    height: 550px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0px;
+  }
 }
 .div_about_marina {
   position: relative;
@@ -498,6 +559,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    height: 250px;
+  }
 }
 .title_about {
   position: absolute;
@@ -515,12 +579,21 @@
   display: flex;
   flex-direction: column;
   justify-content: right;
+  @media screen and (max-width: 780px) {
+    font-size: 14px;
+    height: 35px;
+    right: 340px;
+    top: 15px;
+  }
 }
 .hr00 {
   width: 68px;
   height: 2px;
   background-color: var(--primary, #eba453);
   margin-top: 10px;
+  @media screen and (max-width: 780px) {
+    width: 32px;
+  }
 }
 .div_img_about {
   position: relative;
@@ -528,6 +601,10 @@
   width: fit-content;
   margin-right: 113px;
   z-index: 1;
+  @media screen and (max-width: 780px) {
+    /* background-color: blue; */
+    margin-right: -0px;
+  }
 }
 .img_about {
   width: 304px;
@@ -536,6 +613,10 @@
   background-repeat: no-repeat;
   border-radius: 27px;
   box-shadow: 0px 8px 16px 0px rgba(43, 53, 116, 0.04);
+  @media screen and (max-width: 780px) {
+    width: 202px;
+    height: 203px;
+  }
 }
 .color_bc {
   position: absolute;
@@ -547,17 +628,30 @@
   top: 130px;
   left: -30px;
   z-index: -1;
+  @media screen and (max-width: 780px) {
+    width: 142px;
+    height: 143px;
+    left: -20px;
+    top: 90px;
+  }
 }
 .div_words {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 681px;
+  width: 52%;
   height: 315px;
   background-image: url("/icon/Frame222\ 1686560253.svg");
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    width: 54%;
+    height: 173px;
+    background-size: cover;
+    top: 60px;
+  }
 }
 .p_about {
   max-width: 73%;
@@ -570,6 +664,10 @@
   font-weight: 400;
   z-index: 10;
   line-height: 240%;
+  @media screen and (max-width: 780px) {
+    font-size: 12px;
+    font-family: var(--medium);
+  }
 }
 .div_about_marina2 {
   position: relative;
@@ -579,6 +677,9 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    height: 250px;
+  }
 }
 .title_about2 {
   position: absolute;
@@ -596,12 +697,21 @@
   display: flex;
   flex-direction: column;
   justify-content: right;
+  @media screen and (max-width: 780px) {
+    font-size: 14px;
+    height: 35px;
+    right: 40px;
+    top: 15px;
+  }
 }
 .hr002 {
   width: 118px;
   height: 2px;
   background-color: var(--primary, #eba453);
   margin-top: 10px;
+  @media screen and (max-width: 780px) {
+    width: 62px;
+  }
 }
 .div_img_about2 {
   position: relative;
@@ -609,6 +719,10 @@
   width: fit-content;
   margin-left: 113px;
   z-index: 1;
+  @media screen and (max-width: 780px) {
+    /* background-color: blue; */
+    margin-left: -0px;
+  }
 }
 .img_about2 {
   width: 304px;
@@ -617,6 +731,10 @@
   background-repeat: no-repeat;
   border-radius: 27px;
   box-shadow: 0px 8px 16px 0px rgba(43, 53, 116, 0.04);
+  @media screen and (max-width: 780px) {
+    width: 202px;
+    height: 203px;
+  }
 }
 .color_bc2 {
   position: absolute;
@@ -629,18 +747,30 @@
   top: 130px;
   right: -30px;
   z-index: -1;
+  @media screen and (max-width: 780px) {
+    width: 142px;
+    height: 143px;
+    right: -22px;
+    top: 85px;
+  }
 }
 .div_words2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 681px;
+  width: 52%;
   height: 269px;
   background: rgba(255, 224, 158, 0.5);
   border-radius: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    width: 54%;
+    height: 173px;
+    background-size: cover;
+    top: 60px;
+  }
 }
 .div_reserv {
   position: relative;
@@ -653,6 +783,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    height: 80px;
+    margin-bottom: 50px;
+  }
 }
 .p_reserv1 {
   position: absolute;
@@ -665,6 +799,9 @@
   font-weight: 700;
   line-height: normal;
   right: 20px;
+  @media screen and (max-width: 780px) {
+    font-size: 20px;
+  }
 }
 .p_reserv2 {
   position: absolute;
@@ -676,6 +813,10 @@
   font-weight: 700;
   line-height: normal;
   right: 490px;
+  @media screen and (max-width: 780px) {
+  font-size: 12px;
+  right: 310px;
+  }
 }
 .button_reserv {
   position: absolute;
@@ -695,15 +836,25 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: normal;  
+  @media screen and (max-width: 780px) {
+  width: 100px;
+  height: 36px;
+  font-size: 12px;
+  padding: 0px;
+  border-radius: 10px;
+  }
 }
 .base_comment {
-  width: 1308.578px;
+  width: 93%;
   height: 654px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: top;
+  @media screen and (max-width: 780px) {
+    height: 450px;
+    }
 }
 .div_comment_right {
   position: relative;
@@ -713,12 +864,20 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 780px) {
+    height: 430px;
+    }
 }
 .img1_comment {
   width: 132.7px;
   height: 132.207px;
   background-image: url("/icon/Ellipse\ 26.svg");
   border-radius: 132.7px;
+  @media screen and (max-width: 780px) {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  }
 }
 .img2_comment {
   width: 150.092px;
@@ -727,12 +886,22 @@
   border-radius: 132.7px;
   display: flex;
   align-self: flex-end;
+  @media screen and (max-width: 780px) {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    }
 }
 .img3_comment {
   width: 132.7px;
   height: 132.207px;
   background-image: url("/icon/Ellipse\ 28.svg");
   border-radius: 132.7px;
+  @media screen and (max-width: 780px) {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    }
 }
 .div_comment_center {
   width: 462px;
@@ -748,6 +917,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 780px) {
+    height: 400px;
+    }
 }
 .p_comment {
   color: var(--secondary, #4679e8);
@@ -756,6 +928,9 @@
   font-size: 26px;
   font-weight: 900;
   line-height: normal;
+  @media screen and (max-width: 780px) {
+font-size: 18;
+    }
 }
 .div_img4_comment {
   width: 100%;
@@ -764,12 +939,19 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
+
 }
 .img4_comment {
   width: 184px;
   height: 184px;
   border-radius: 132.7px;
   background-image: url("/icon/Ellipse\ 29.svg");
+  @media screen and (max-width: 780px) {
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    }
 }
 .p_img4 {
   color: var(--neutral-04, #787878);
@@ -779,6 +961,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 780px) {
+ font-size: 12px;
+    }
 }
 .div_comment_left {
   position: relative;
@@ -788,6 +973,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  @media screen and (max-width: 780px) {
+    height: 420px;
+    }
 }
 .img5_comment {
   width: 132.7px;
@@ -795,6 +983,11 @@
   background-image: url("/icon/Ellipse\ 30.svg");
   background-repeat: no-repeat;
   border-radius: 132.7px;
+  @media screen and (max-width: 780px) {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    }
 }
 .img6_comment {
   width: 150.092px;
@@ -804,6 +997,11 @@
   border-radius: 132.7px;
   display: flex;
   align-self: flex-start;
+  @media screen and (max-width: 780px) {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    }
 }
 .img7_comment {
   width: 132.7px;
@@ -811,6 +1009,11 @@
   background-image: url("/icon/Ellipse\ 32.svg");
   background-repeat: no-repeat;
   border-radius: 132.7px;
+  @media screen and (max-width: 780px) {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    }
 }
 .divhr4 {
   width: 76%;
@@ -859,6 +1062,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 780px) {
+    justify-content: center;
+    gap: 8px;
+height: 250px;
+     }
+  
 }
 .divhr5 {
   width: 100%;
@@ -893,6 +1102,9 @@
   font-weight: 900;
   font-style: normal;
   line-height: normal;
+  @media screen and (max-width: 780px) {
+
+font-size: 12px;  }
 }
 .point4 {
   width: 8px;
@@ -927,6 +1139,11 @@
   gap: 15px;
   border-radius: 8px;
   border: 1px solid var(--C9CBD1, #c9cbd1);
+  @media screen and (max-width: 780px) {
+    width: 240px;
+    height: 80px;
+    gap: 0px;
+    }
 }
 .div_p_question {
   width: 400px;
@@ -942,6 +1159,9 @@
   font-weight: 500;
   gap: 24px;
   /* background-color: aqua; */
+  @media screen and (max-width: 780px) {
+font-size: 8px;
+  }
 }
 .p2_question {
   max-width: 380px;
@@ -953,6 +1173,9 @@
   font-weight: 300;
   line-height: 28px;
   margin-right: 50px;
+  @media screen and (max-width: 780px) {
+font-size: 8px;   
+ }
 }
 .end {
   display: flex;

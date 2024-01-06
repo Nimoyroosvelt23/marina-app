@@ -19,8 +19,9 @@ function footer() {
     return (
         <>
           <div className={styles.end}>
-        <Image alt="" src={keshti} height="91" width="176" />
-        <p className="pain">
+        <Image
+         className={styles.img1} alt="" src={keshti} height="91" width="176" />
+        <p className={styles.pain}>
           مارینا کیش تخصصی ترین و متنوع ترین ارائه دهنده کالا و تجهیزات دریایی
           در کشور عزیزمان می باشد. از این رو به عنوان نماینده انحصاری کمپانی های
           معتبری همچون، ژانو، ردپدل، ویبیت، هوبی کت و بسیاری از تجهیزات دریایی
@@ -29,7 +30,8 @@ function footer() {
         </p>
 
         <div className="bilder">
-          <Image alt="" src={ax6} width="90" height="42" />
+          <Image 
+           alt="" src={ax6} width="90" height="42" />
           <Image alt="" src={ax5} width="90" height="42" />
           <Image alt="" src={ax4} width="90" height="42" />
           <Image alt="" src={ax3} width="90" height="42" />
@@ -55,9 +57,9 @@ function footer() {
         </div>
 
         <div className={styles.rast}>
-          <Image alt="hhhhhh" src={ngo} width="54" height="46" />
-          <Image alt="hhhhhh" src={ngo2} width="30" height="44" />
           <Image alt="hhhhhh" src={ngo3} width="46" height="42" />
+          <Image alt="hhhhhh" src={ngo2} width="30" height="44" />
+          <Image alt="hhhhhh" src={ngo} width="54" height="46" />
           <Image alt="hhhhhh" src={insta} width="20" height="20" />
           <Image alt="hhhhhh" src={facebook} width="20" height="20" />
           <Image alt="hhhhhh" src={t} width="20" height="20" />

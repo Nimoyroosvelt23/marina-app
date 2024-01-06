@@ -1,179 +1,172 @@
 .end {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: 290px;
-    background: rgba(255, 255, 255, 0.8);
-    gap: 1em;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
-    padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 290px;
+  background: rgba(255, 255, 255, 0.8);
+  gap: 1em;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
+  padding-top: 45px;
+  margin-top: 10vh;
+  @media screen and (max-width: 780px) {
+    height: 200px;
+    padding-top: 25px;
   }
-  
-  .axax {
-    display: flex;
-    width: 18.5px;
-    height: 13.64px;
-    padding: 5.182px 2.75px 5.18px 2.753px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+}
+.img1 {
+  @media screen and (max-width: 780px) {
+    height: 50px;
+    width: 115px;
   }
-  
-  .rezerv {
-    gap: 8px;
-    color: #fff;
-    font-family: var(--medium);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+}
+
+.pain {
+  font-family: var(--small);
+  direction: rtl;
+  height: 72px;
+  width: 423px;
+  color: var(--7B808C, #7b808c);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media screen and (max-width: 780px) {
+    font-size: 8px;
   }
-  
-  .pain {
-    font-family: var(--small);
-    direction: rtl;
-    height: 72px;
-    width: 423px;
-    color: var(--7B808C, #7b808c);
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .taknafare {
-    font-family: var(--bolder);
-    color: var(--black, #393939);
-    text-align: right;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: bolder;
-    line-height: normal;
-    width: 77px;
-    height: 36px;
-    direction: rtl;
-  }
-  
-  .taknafare2 {
-    direction: rtl;
-    width: 112px;
-    height: 24px;
-    color: rgb(144, 144, 144);
-    text-align: right;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-family: var(--small);
-  }
-  
-  .bilder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 21px;
-  }
-  
-  .akharin {
-    height: 78px;
-    width: 100%;
-  }
-  
-  .darakhar {
-    direction: rtl;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.8);
-    border-top: 1px solid #ededed;
-  }
-  
-  .rast {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 12px;
-    margin-left: 1vw;
-  }
-  
-  .divtah {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    flex-direction: row;
-    height: 40px;
-    gap: 15px;
-    color: var(--7B808C, #7b808c);
-    text-align: center;
-    font-family: var(--medium);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-right: 1vw;
-  }
-  
-  .kie {
-    border-left-color: #7b808c;
-    text-align: center;
-    font-family: var(--medium);
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .kie2 {
-    font-family: var(--small);
-    direction: rtl;
-    height: 24px;
-    color: #7b808c;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .divd1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 25%;
-    width: 22%;
-    border-left: 1.5px solid #ededed;
-  }
-  .divd2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 25%;
-    width: 19%;
-    border-left: 1.5px solid #ededed;
-  }
-  .divd3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 25%;
-    width: 17%;
-    border-left: 1.5px solid #ededed;
-  }
-  
-  .span {
-    width: 0px;
-    height: 12px;
-    stroke-width: 0.5px;
-    background-color: #7b808c;
-  }
-  
+}
+
+.taknafare {
+  font-family: var(--bolder);
+  color: var(--black, #393939);
+  text-align: right;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  width: 77px;
+  height: 36px;
+  direction: rtl;
+}
+
+.taknafare2 {
+  direction: rtl;
+  width: 112px;
+  height: 24px;
+  color: rgb(144, 144, 144);
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: var(--small);
+}
+
+.bilder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 21px;
+}
+
+.akharin {
+  height: 78px;
+  width: 100%;
+}
+
+.darakhar {
+  direction: rtl;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid #ededed;
+}
+
+.rast {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 12px;
+  margin-left: 1vw;
+}
+
+.divtah {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+  height: 40px;
+  gap: 15px;
+  color: var(--7B808C, #7b808c);
+  text-align: center;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 1vw;
+}
+
+.kie {
+  border-left-color: #7b808c;
+  text-align: center;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.kie2 {
+  font-family: var(--small);
+  direction: rtl;
+  height: 24px;
+  color: #7b808c;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.divd1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 25%;
+  width: 22%;
+  border-left: 1.5px solid #ededed;
+}
+.divd2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 25%;
+  width: 19%;
+  border-left: 1.5px solid #ededed;
+}
+.divd3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 25%;
+  width: 17%;
+  border-left: 1.5px solid #ededed;
+}
+
+.span {
+  width: 0px;
+  height: 12px;
+  stroke-width: 0.5px;
+  background-color: #7b808c;
+}

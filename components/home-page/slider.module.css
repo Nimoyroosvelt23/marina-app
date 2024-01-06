@@ -12,61 +12,88 @@
 } */
 
 .number_slide1 {
-  max-width: 421px !important;
-  min-width: 421px !important;
+  max-width: 32% !important;
+  min-width: 32% !important;
   height: 196px !important;
   border-radius: 16px;
   margin-top: 40px;
   background-image: url('/aa.svg');
   display: flex;
-  
+  @media screen and (max-width: 480px) {
+    max-width: 28% !important;
+  min-width: 28% !important;
+  height: 196px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
 }
 .number_slide2 {
-  max-width: 421px !important;
-  min-width: 421px !important;
+  max-width: 32% !important;
+  min-width: 32% !important;
   height: 196px !important;
   border-radius: 16px;
   margin-top: 40px;
   background-image: url('/icon/pexels-kampus-production-8711917\ 1.svg');
+  @media screen and (max-width: 480px) {
+    max-width: 28% !important;
+  min-width: 28% !important;
+  }
 }
 
 .number_slide3 {
-  max-width: 421px !important;
-  min-width: 421px !important;
+  max-width: 32% !important;
+  min-width: 32% !important;
   height: 196px !important;
   border-radius: 16px;
   margin-top: 40px;
   background-image: url('/icon/shatel3\ 1.svg');
+  @media screen and (max-width: 480px) {
+    max-width: 28% !important;
+  min-width: 28% !important;
+  }
 }
 
 .number_slide4 {
-  max-width: 421px !important;
-  min-width: 421px !important;
+  max-width: 32% !important;
+  min-width: 32% !important;
   height: 196px !important;
   border-radius: 16px;
   margin-top: 40px;
   background-image: url('/aa.svg');
+  @media screen and (max-width: 480px) {
+    max-width: 28% !important;
+  min-width: 28% !important;
+  }
 }
 
 .number_slide5 {
-  max-width: 421px !important;
-  min-width: 421px !important;
+  max-width: 32% !important;
+  min-width: 32% !important;
   height: 196px !important;
   border-radius: 16px;
   margin-top: 40px;
   background-image: url('/icon/pexels-kampus-production-8711917\ 1.svg');
+  @media screen and (max-width: 480px) {
+    max-width: 28% !important;
+  min-width: 28% !important;
+  }
 }
 
 .number_slide6 {
-  max-width: 421px !important;
-  min-width: 421px !important;
+  max-width: 32% !important;
+  min-width: 32% !important;
   height: 196px !important;
   border-radius: 16px;
   margin-top: 40px;
   background-image: url('/icon/shatel3\ 1.svg');
+  @media screen and (max-width: 480px) {
+    max-width: 28% !important;
+  min-width: 28% !important;
+  }
 }
 .shadow1{
-  width: 421px;
+  width: 100%;
    height: 196px;
    position: relative;
    z-index: 10;

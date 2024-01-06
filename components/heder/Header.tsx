@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import "animate.css";
 function Header() {
   const [openRest, setOpenRest] = useState(false);
@@ -33,27 +34,6 @@ function Header() {
               width="14"
             />
           </div>
-          {/* <div className={styles.select1}>
-        <div
-          className={`${styles.select} ${isOpen ? styles.open : ''}`}
-          onClick={handleSelectToggle}
-        >
-          <span>Select an option
-          <Image
-              src={"/icon/Polygon 8.svg"}
-              alt="GFG logo served with static path of public directory"
-              height="14"
-              width="14"
-            />
-          </span>
-          <div className={styles.options}>
-            <div className={styles.option}>Option 1</div>
-            <div className={styles.option}>Option 2</div>
-            <div className={styles.option}>Option 3</div>
-            <div className={styles.option}>Option 4</div>
-          </div>
-        </div>
-      </div> */}
           <div className={styles.select1}>
             <div className={styles.p1}> 4 نفر</div>
             <Image
@@ -90,7 +70,16 @@ function Header() {
               : { transform: "scaleY(0)" }
           }
         >
-          <p className={styles.p1_bang}>تفریحات دریایی</p>
+          <div className={styles.div_bang0}>
+            <p className={styles.p1_bang}>تفریحات دریایی</p>
+            <Image
+            className={styles.icon_bang1}
+                  src={"/icon/Expand_down.svg"}
+                  alt="GFG logo served with static path of public directory"
+                  height="24"
+                  width="24"
+                />
+          </div>
           <div className={styles.div1_bang}>تفریحات تک نفره</div>
           <div className={styles.div1_bang}>تفریحات دو نفره</div>
           <div className={styles.div1_bang}>تفریحات گروهی</div>
@@ -127,8 +116,12 @@ function Header() {
 
               <div className={styles.div_span1_3}>
                 <li>رزرو اقامتگاه</li>
-                <li className={styles.span1}> تماس با ما</li>
+              <Link style={{textDecoration:'none' , color:'#222222'}} href="/contact">
+                <li> تماس با ما</li>
+              </Link>
+                <Link style={{textDecoration:'none' , color:'#222222'}}  href="/blog">
                 <li className={styles.span1}> بلاگ</li>
+                </Link>
               </div>
             </div>
             <div className={styles.left_header}>

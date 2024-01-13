@@ -193,6 +193,7 @@ font-weight: 700;
 line-height: normal;
 margin-right: 18px;
 text-align: center;
+cursor: pointer;
 }
 .p_div_button1_4{
   color: var(--white, #F2F7FF);

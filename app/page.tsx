@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
 import RootLayout from "./layout";
-import Header from "@/components/heder/Header";
+import Header from "../components/heder/Header";
 import Image from "next/image";
-import Center from "@/components/home-page/Center";
+import Center from "../components/home-page/Center";
 export default function Landing() {
   return (
     <RootLayout>

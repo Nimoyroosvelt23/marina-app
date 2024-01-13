@@ -39,9 +39,11 @@
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
   pointer-events: none;
+  text-decoration: none;
   @media screen and (max-width: 780px) {
     width: 48%;
     height: 48%;
+
   }
   @media screen and (max-width: 480px) {
     width: 48%;
@@ -87,7 +89,7 @@
   margin-top: 88px;
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   /* background-color: bisque; */
 }
@@ -154,10 +156,10 @@
   /* justify-content: space-between; */
   /* align-items: center; */
 }
-.div_right_img:hover {
+/* .div_right_img:hover {
   height: 85%;
   gap: 90px;
-}
+} */
 .img1 {
   width: 99%;
   height: 412px;
@@ -203,13 +205,13 @@
   box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
 }
 
-.img1:hover {
+/* .img1:hover {
   transform-origin: right top;
   transform: scaleX(1.3) scaleY(1.2);
   transition: ease-in-out 0.5s;
 }
 .img1:hover + .div_down_img .img2 {
-  /* transform: scaleX(1.3) scaleY(1.1); */
+  transform: scaleX(1.3) scaleY(1.1);
   transform-origin: left;
   transition: ease-in-out 0.5s;
   width: 450px;
@@ -217,17 +219,17 @@
   background-position: center;
 }
 .img1:hover + .div_down_img .img3 {
-  /* transform: scaleX(1.3) scaleY(1.1); */
+  transform: scaleX(1.3) scaleY(1.1);
   transition: ease-in-out 0.5s;
   width: 200px;
   height: 200px;
 }
 .img1:hover + .divleft_img .img4 {
-  /* transform: scaleX(1.3) scaleY(1.1); */
+  transform: scaleX(1.3) scaleY(1.1);
   transition: ease-in-out 0.5s;
   width: 190px;
   height: 666px;
-}
+} */
 .divleft_img {
   display: flex;
 }
@@ -288,10 +290,11 @@
   display: flex;
   align-items: center;
   background-image: url("/icon/banner.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
   @media screen and (max-width: 780px) {
-    background-size: cover;
+    background-size: contain;
     width: 91%;
     height: 300px;
   }
@@ -829,6 +832,7 @@
   border: 0px;
   border-radius: 15px;
   left: 30px;
+  top: 37px;
   background: var(--white, #f2f7ff);
   box-shadow: 0px 4px 8px 0px rgba(43, 53, 116, 0.06);
   color: var(--black, #393939);
@@ -837,6 +841,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;  
+  cursor: pointer;
   @media screen and (max-width: 780px) {
   width: 100px;
   height: 36px;

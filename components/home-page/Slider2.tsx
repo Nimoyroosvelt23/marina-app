@@ -4,6 +4,7 @@ import styles from "./slider.module.css";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
+import Link from "next/link";
 export default function Slider2() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -57,50 +58,50 @@ export default function Slider2() {
         <div ref={sliderRef} className="keen-slider" style={{ gap: 10 }}>
           <div className={`keen-slider__slide ${styles.number_slide2_1}`}>
             <div className={styles.shadow1}>
-              <div className={styles.div__button2}>
+            <Link style={{textDecoration:'none', cursor:'context-menu' }} href='/panel' className={styles.div__button2}>
               <button className={styles.button1_9}>رزرو</button>
               <p className={styles.p_div_button2_1_4}>کشتی آرتمیس پلاس</p>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={`keen-slider__slide ${styles.number_slide2_2}`}>
             <div className={styles.shadow1}>
-            <div className={styles.div__button}>
+            <Link style={{textDecoration:'none', cursor:'context-menu' }} href='/panel' className={styles.div__button2}>
               <button className={styles.button1_9}>رزرو</button>
               <p className={styles.p_div_button2_2_5}>بنانا</p>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={`keen-slider__slide ${styles.number_slide2_3}`}>
             <div className={styles.shadow1}>
-            <div className={styles.div__button2}>
+            <Link style={{textDecoration:'none', cursor:'context-menu' }} href='/panel' className={styles.div__button2}>
               <button className={styles.button1_9}>رزرو</button>
               <p className={styles.p_div_button2_3_6}>کشتی کارینا VIP</p>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={`keen-slider__slide ${styles.number_slide2_4}`}>
             <div className={styles.shadow1}>
-            <div className={styles.div__button}>
+            <Link style={{textDecoration:'none', cursor:'context-menu' }} href='/panel' className={styles.div__button2}>
               <button className={styles.button1_9}>رزرو</button>
               <p className={styles.p_div_button2_1_4}>کشتی آرتمیس پلاس</p>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={`keen-slider__slide ${styles.number_slide2_5}`}>
             <div className={styles.shadow1}>
-            <div className={styles.div__button}>
+            <Link style={{textDecoration:'none', cursor:'context-menu' }} href='/panel' className={styles.div__button}>
               <button className={styles.button1_9}>رزرو</button>
               <p className={styles.p_div_button2_2_5}>بنانا</p>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={`keen-slider__slide ${styles.number_slide2_6}`}>
             <div className={styles.shadow1}>
-            <div className={styles.div__button2}>
+            <Link style={{textDecoration:'none', cursor:'context-menu' }} href='/panel' className={styles.div__button2}>
               <button className={styles.button1_9}>رزرو</button>
               <p className={styles.p_div_button2_3_6}>کشتی کارینا VIP</p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

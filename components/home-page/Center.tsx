@@ -13,6 +13,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Slider from "./Slider";
 import Slider2 from "./Slider2";
 import Footer from "./footer";
+import Link from "next/link";
 function Center() {
   const [inputValue, setInputValue] = useState<string>("");
   const [allData1, setAllData1] = useState<Array<{ inputValue: string }>>([]);
@@ -54,13 +55,15 @@ function Center() {
     <>
       <div className={styles.water1_sports}>
         {NameWaterSports.map((item, index) => (
-          <div key={index} className={styles.water_sports}>
+          <>
+          <Link className={styles.water_sports} href='/entertainmentlist'>
             <div className={styles.div_circle}>
               <Image src={item.img} alt="item" width={64} height={64} />
             </div>
             <p className={styles.title}>{item.title}</p>
             <p className={styles.text}>{item.text}</p>
-          </div>
+          </Link>
+          </>
         ))}
       </div>
       <div className={styles.divhr}>
@@ -182,7 +185,7 @@ function Center() {
             <div style={{ width: "75%" }}>
               <p>تماشای دریای بی کران با قایق های بادبانی</p>
             </div>
-            <div className={styles.qwe2}>
+            <Link className={styles.qwe2} style={{textDecoration:'none'}} href='/blog'>
               <p>مشاهده بیشتر</p>
               <Image
                 src="/icon/Arrow_left2.svg"
@@ -190,7 +193,7 @@ function Center() {
                 width={24}
                 height={24}
               />
-            </div>
+            </Link>
           </div>
         </div>
         <div className={styles.img2_news}>
@@ -198,15 +201,16 @@ function Center() {
             <div style={{ width: "75%" }}>
               <p>تماشای دریای بی کران با قایق های بادبانی</p>
             </div>
-            <div className={styles.qwe2}>
+            
+            <Link className={styles.qwe2} style={{textDecoration:'none'}} href='/blog'>
               <p>مشاهده بیشتر</p>
               <Image
                 src="/icon/Arrow_left2.svg"
                 alt=""
                 width={24}
                 height={24}
-              />
-            </div>
+                />
+                </Link>
           </div>
         </div>
         <div className={styles.img3_news}>
@@ -215,7 +219,7 @@ function Center() {
             <div style={{ width: "75%" }}>
               <p>تماشای دریای بی کران با قایق های بادبانی</p>
             </div>
-            <div className={styles.qwe2}>
+            <Link className={styles.qwe2} style={{textDecoration:'none'}} href='/blog'>
               <p>مشاهده بیشتر</p>
               <Image
                 src="/icon/Arrow_left2.svg"
@@ -223,7 +227,7 @@ function Center() {
                 width={24}
                 height={24}
               />
-            </div>
+            </Link>
           </div>
         </div>
         <div className={styles.img4_news}>
@@ -232,7 +236,7 @@ function Center() {
             <div style={{ width: "75%" }}>
               <p>تماشای دریای بی کران با قایق های بادبانی</p>
             </div>
-            <div className={styles.qwe2}>
+            <Link className={styles.qwe2} style={{textDecoration:'none'}} href='/blog'>
               <p>مشاهده بیشتر</p>
               <Image
                 src="/icon/Arrow_left2.svg"
@@ -240,7 +244,7 @@ function Center() {
                 width={24}
                 height={24}
               />
-            </div>
+            </Link>
           </div>
         </div>
         <div className={styles.img5_news}>
@@ -249,7 +253,7 @@ function Center() {
             <div style={{ width: "75%" }}>
               <p>تماشای دریای بی کران با قایق های بادبانی</p>
             </div>
-            <div className={styles.qwe2}>
+            <Link className={styles.qwe2} style={{textDecoration:'none'}} href='/blog'>
               <p>مشاهده بیشتر</p>
               <Image
                 src="/icon/Arrow_left2.svg"
@@ -257,7 +261,7 @@ function Center() {
                 width={24}
                 height={24}
               />
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -301,7 +305,9 @@ function Center() {
       <div className={styles.div_reserv}>
         <p className={styles.p_reserv1}>بعد از اون همه کار تفریح میچسبه!</p>
         <p className={styles.p_reserv2}>همین الان رزرو کن</p>
+        <Link  href='/entertainmentlist'>
         <button className={styles.button_reserv}>رزرو کنید</button>
+        </Link>
       </div>
       <div className={styles.base_comment}>
         <div className={styles.div_comment_right}>

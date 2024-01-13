@@ -52,7 +52,9 @@ function Header() {
               width="14"
             />
           </div>
-          <button className={styles.button}>رزرو</button>
+          <Link className={styles.button} href="/panel">
+            <p>رزرو</p>
+          </Link>
         </div>
       </div>
       <div
@@ -73,18 +75,20 @@ function Header() {
           <div className={styles.div_bang0}>
             <p className={styles.p1_bang}>تفریحات دریایی</p>
             <Image
-            className={styles.icon_bang1}
-                  src={"/icon/Expand_down.svg"}
-                  alt="GFG logo served with static path of public directory"
-                  height="24"
-                  width="24"
-                />
+              className={styles.icon_bang1}
+              src={"/icon/Expand_down.svg"}
+              alt="GFG logo served with static path of public directory"
+              height="24"
+              width="24"
+            />
           </div>
-          <div className={styles.div1_bang}>تفریحات تک نفره</div>
-          <div className={styles.div1_bang}>تفریحات دو نفره</div>
-          <div className={styles.div1_bang}>تفریحات گروهی</div>
-          <div className={styles.div1_bang}>کشتی های VIP</div>
-          <div className={styles.div5_bang}>پارک آبی اوشن</div>
+          <Link style={{ textDecoration: "none" }} href="/entertainmentlist">
+            <div className={styles.div1_bang}>تفریحات تک نفره</div>
+            <div className={styles.div1_bang}>تفریحات دو نفره</div>
+            <div className={styles.div1_bang}>تفریحات گروهی</div>
+            <div className={styles.div1_bang}>کشتی های VIP</div>
+            <div className={styles.div5_bang}>پارک آبی اوشن</div>
+          </Link>
         </div>
         <div className={styles.header}>
           <ul className={styles.item_header}>
@@ -116,11 +120,17 @@ function Header() {
 
               <div className={styles.div_span1_3}>
                 <li>رزرو اقامتگاه</li>
-              <Link style={{textDecoration:'none' , color:'#222222'}} href="/contact">
-                <li> تماس با ما</li>
-              </Link>
-                <Link style={{textDecoration:'none' , color:'#222222'}}  href="/blog">
-                <li className={styles.span1}> بلاگ</li>
+                <Link
+                  style={{ textDecoration: "none", color: "#222222" }}
+                  href="/contact"
+                >
+                  <li> تماس با ما</li>
+                </Link>
+                <Link
+                  style={{ textDecoration: "none", color: "#222222" }}
+                  href="/blog"
+                >
+                  <li className={styles.span1}> بلاگ</li>
                 </Link>
               </div>
             </div>
@@ -131,18 +141,22 @@ function Header() {
                 height="24"
                 width="24"
               />
-              <Image
-                src={"/icon/File_dock.svg"}
-                alt="GFG logo served with static path of public directory"
-                height="24"
-                width="24"
-              />
-              <Image
-                src={"/icon/User_alt_light.svg"}
-                alt="GFG logo served with static path of public directory"
-                height="24"
-                width="24"
-              />
+              <Link href="/card">
+                <Image
+                  src={"/icon/File_dock.svg"}
+                  alt="GFG logo served with static path of public directory"
+                  height="24"
+                  width="24"
+                />
+              </Link>
+              <Link href="/profile">
+                <Image
+                  src={"/icon/User_alt_light.svg"}
+                  alt="GFG logo served with static path of public directory"
+                  height="24"
+                  width="24"
+                />
+              </Link>
             </div>
           </ul>
         </div>

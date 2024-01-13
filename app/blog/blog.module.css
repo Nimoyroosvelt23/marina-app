@@ -74,6 +74,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     /* background-color: aqua; */
   }
   .bang{
@@ -123,6 +124,11 @@
   justify-content: right;
   align-items: flex-start;
   }
+  .div1_bang:hover{
+    border-bottom: 0.1px solid #dd9800;
+    color: var(--black, #dd9800);
+    transition: ease-in-out 0.3s;
+  }  
   .div5_bang{
     width: fit-content;
     height: 30px;
@@ -138,6 +144,10 @@
   justify-content: right;
   margin-left: 1vw;
   }
+  .div5_bang:hover{
+    color: var(--black, #dd9800);
+    transition: ease-in-out 0.3s;
+  }  
   
   .li_header1 {
     color: #222222;

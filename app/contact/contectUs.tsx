@@ -27,10 +27,7 @@ function ContectUs() {
     setEmail("");
     setText(""); 
   }
-<<<<<<< HEAD
   console.log(allData);
-=======
->>>>>>> b51deff09f5965fb053c0c90174415659dc0e4df
   return (
     <>
       <div className={styles.base_hr}>

@@ -185,6 +185,7 @@
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 .div_base_contect2 {
   width: 75%;
